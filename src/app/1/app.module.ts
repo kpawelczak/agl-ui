@@ -2,21 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FabricGuiModule } from './chip/fabric-gui.module'
+import { ChipComponent } from './chip/chip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+    ChipComponent,
    
     
   ],
   imports: [
     BrowserModule,
-    FabricGuiModule
+    
   ],
   exports: [
-    FabricGuiModule
+    ChipComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
