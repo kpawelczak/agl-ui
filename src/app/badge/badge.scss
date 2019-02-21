@@ -1,0 +1,24 @@
+$white: #fefdfc;
+$black: #333;
+$gray: #999;
+$gray-light: #ccc;
+$gray-lightest: #dfdfdf;
+
+.gui-badge{
+    position: relative;
+    left: 2px;
+    top:-10px;
+    border: solid;
+    border-width: 1px;
+    border-color: $gray;
+    display: inline-block;
+    padding: 0 2px;
+    height: 10px;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 100px;
+    background-color: $white;
+}
+.gui-badge:hover { 
+    background-color:  $gray-lightest;
+  }
