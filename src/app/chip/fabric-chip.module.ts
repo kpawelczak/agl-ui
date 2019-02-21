@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { ChipComponent } from './chip.component';
 
 @NgModule({
@@ -8,6 +8,9 @@ import { ChipComponent } from './chip.component';
     ChipComponent,
       
   ],
+  imports: [
+    CommonModule
+  ],
  
 
   exports: [
@@ -15,4 +18,4 @@ import { ChipComponent } from './chip.component';
   ],
  
 })
-export class FabricGuiModule { }
+export class FabricChipModule { }

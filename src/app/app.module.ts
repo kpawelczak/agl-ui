@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FabricGuiModule } from './chip/fabric-gui.module'
+import { FabricChipModule } from './chip/fabric-chip.module'
 
 @NgModule({
   declarations: [
@@ -13,10 +13,10 @@ import { FabricGuiModule } from './chip/fabric-gui.module'
   ],
   imports: [
     BrowserModule,
-    FabricGuiModule
+    FabricChipModule
   ],
   exports: [
-    FabricGuiModule
+    FabricChipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
