@@ -1,0 +1,22 @@
+$white: #fefdfc;
+$black: #333;
+$gray: #999;
+$gray-light: #ccc;
+$gray-lightest: #dfdfdf;
+
+.gui-chip {
+  border: solid;
+  border-width: 1px;
+  border-color: $gray;
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: $white;
+  cursor: pointer;
+}
+.gui-chip:hover { 
+  background-color:  $gray-lightest;
+}
