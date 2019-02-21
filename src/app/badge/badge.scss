@@ -4,6 +4,10 @@ $gray: #999;
 $gray-light: #ccc;
 $gray-lightest: #dfdfdf;
 
+$pink: #fc00dacc;
+$pink-light: #f562e1cc;
+$pink-lightest: #f59fe9cc;
+
 .gui-badge{
     position: relative;
     left: 2px;
@@ -23,4 +27,4 @@ $gray-lightest: #dfdfdf;
 }
 .gui-badge:hover { 
     background-color:  $gray-lightest;
-  }
+}
