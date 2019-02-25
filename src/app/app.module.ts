@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FabricChipModule } from './chip/fabric-chip.module';
 import { FabricBadgeModule } from './badge/fabric-badge.module';
+import { FabricButtonModule } from './button/fabric-button.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,12 @@ import { FabricBadgeModule } from './badge/fabric-badge.module';
     BrowserModule,
     FabricChipModule,
     FabricBadgeModule,
+    FabricButtonModule
   ],
   exports: [
     FabricChipModule,
     FabricBadgeModule,
+    FabricButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

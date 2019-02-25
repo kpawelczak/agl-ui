@@ -1,8 +1,4 @@
-$white: #fefdfc;
-$black: #333;
-$gray: #999;
-$gray-light: #ccc;
-$gray-lightest: #dfdfdf;
+@import '../variables.scss';
 
 .gui-chip {
   border: solid;

@@ -1,12 +1,4 @@
-$white: #fefdfc;
-$black: #333;
-$gray: #999;
-$gray-light: #ccc;
-$gray-lightest: #dfdfdf;
-
-$pink: #fc00dacc;
-$pink-light: #f562e1cc;
-$pink-lightest: #f59fe9cc;
+@import '../variables.scss';
 
 .gui-badge{
     position: relative;
