@@ -5,6 +5,9 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     templateUrl: './badge.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
-    styleUrls: ['./badge.scss']
+    styleUrls: ['./badge.scss'],
+    host: {
+		'[class.gui-badge]': 'true'
+	}
 })
 export class BadgeComponent { }

@@ -6,5 +6,8 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./chip.scss'],
+    host: {
+		'[class.gui-chip]': 'true'
+	}
 })
 export class ChipComponent { }
