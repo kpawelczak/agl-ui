@@ -23,12 +23,10 @@
 }
 
 .Primary {
-    border: {
-		color: $gray;
-	}
+    
     background: $blue-light;  
   
     &:hover { 
           background:  $blue-lightest;
-    }
+    }	
 }

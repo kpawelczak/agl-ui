@@ -1,6 +1,6 @@
 @import '../variables.scss';
 
-button.gui-button {
+.gui-button {
 	background: $white;
 
 	border: {
@@ -37,4 +37,20 @@ button.gui-button {
 			background: $white;
 		}
 	}
+}
+
+.Primary {
+    
+    background: $blue-light;  
+  
+    &:hover { 
+          background:  $blue-lightest;
+    }
+    &:active {}
+
+	&:disabled {
+        		
+		color: $gray-light;
+        cursor: default;
+    }
 }
