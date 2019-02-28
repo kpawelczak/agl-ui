@@ -28,11 +28,20 @@
     }
 }
 
-.Primary {
+.BadgePrimary {
     
     background: $blue-light;  
   
     &:hover { 
           background:  $blue-lightest;
+    }    
+}
+
+.BadgeSecondary {
+    
+    background: $green-light;  
+  
+    &:hover { 
+          background:  $green-lightest;
     }    
 }

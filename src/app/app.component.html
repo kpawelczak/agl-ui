@@ -2,74 +2,79 @@
 
 <article>
 
-	<h2>Buttons</h2>
+    <h2>Buttons</h2>
 
-	<section>
+    <section>
 
-		<ul>
-			<li>
-				<button gui-button [ngClass]="status ? 'Primary' : 'gui-button'" (click)="toggle_class()">Click Me!</button>
-			</li>
+        <ul>
+            <li>
+                <button gui-button [ngClass]="status ? 'Primary' : 'gui-button'" (click)="toggle_class()">Click
+                    Me!</button>
+            </li>
 
-			<li>
-				<button gui-button>Secondary</button>
-			</li>
+            <li>
+                <button gui-button [color]="Secondary">Secondary</button>
+            </li>
 
-			<li>
-				<button gui-button>Accept</button>
-			</li>
+            <li>
+                <button gui-button>Accept</button>
+            </li>
 
-			<li>
-				<button gui-button>Cancel</button>
-			</li>
+            <li>
+                <button gui-button>Cancel</button>
+            </li>
 
-		</ul>
-	</section>
-	<h2>Chips</h2>
+        </ul>
+    </section>
+    <h2>Chips</h2>
 
-	<section>
+    <section>
 
-		
-			<ul>
-				<gui-chip [color]="Primary">Primary</gui-chip>
-			</ul>
 
-			<ul>
-				<gui-chip [color]="Secondary">Secondary</gui-chip>
-			</ul>
+        <ul>
+            <gui-chip [color]="Primary">Primary</gui-chip>
+        </ul>
 
-			<ul>
-				<gui-chip>Accept</gui-chip>
-			</ul>
+        <ul>
+            <gui-chip [color]="Secondary">Secondary</gui-chip>
+        </ul>
 
-			<ul>
-				<gui-chip>Cancel</gui-chip>
-			</ul>
+        <ul>
+            <gui-chip>Accept</gui-chip>
+        </ul>
 
-		
-	</section>
+        <ul>
+            <gui-chip>Cancel</gui-chip>
+        </ul>
 
-	<h2>Badges</h2>
 
-	<section>
+    </section>
 
-		
-			<ul>
-				<button gui-button [ngClass]="Primary">Primary</button><gui-badge [ngClass]="Primary">1</gui-badge>
-            </ul>
+    <h2>Badges</h2>
 
-			<ul>
-				<button gui-button>Secondary</button><gui-badge>12</gui-badge>
-			</ul>
+    <section>
 
-			<ul>
-				<button gui-button>Accept</button><gui-badge>B</gui-badge>
-			</ul>
 
-			<ul>
-				<button gui-button>Cancel</button><gui-badge>Badge</gui-badge>
-			</ul>
+        <ul>
+            <button gui-button>Primary</button>
+            <gui-badge [color]="Primary">1</gui-badge>
+        </ul>
 
-		
-	</section>
+        <ul>
+            <button gui-button>Secondary</button>
+            <gui-badge [color]="Secondary">12</gui-badge>
+        </ul>
+
+        <ul>
+            <button gui-button>Accept</button>
+            <gui-badge>B</gui-badge>
+        </ul>
+
+        <ul>
+            <button gui-button>Cancel</button>
+            <gui-badge>Badge</gui-badge>
+        </ul>
+
+
+    </section>
 </article>

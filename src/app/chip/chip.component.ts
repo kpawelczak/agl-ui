@@ -15,11 +15,10 @@ export class ChipComponent {
 
         switch (this.color) {
 
-            case "Primary": return "Primary";
-            case "Secondary": return "Secondary";
+            case "Primary": return "ChipPrimary";
+            case "Secondary": return "ChipSecondary";
 
         }
-        console.log(this.color);
     }
 
 }

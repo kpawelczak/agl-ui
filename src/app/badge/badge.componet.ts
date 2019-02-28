@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
     selector: 'gui-badge',
@@ -6,8 +6,18 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./badge.scss'],
-    host: {
-		'[class.gui-badge]': 'true'
-	}
 })
-export class BadgeComponent { }
+export class BadgeComponent {
+
+    @Input() public color: string;
+
+    getClass(color: string) {
+
+        switch (this.color) {
+
+            case "Primary": return "BadgePrimary";
+            case "Secondary": return "BadgeSecondary";
+
+        }
+    }
+}
