@@ -14,12 +14,12 @@ export class FabricButtonComponent {
 
     @Input() public color: string;
 
-    getClass(color: string) {
+    getClass() {
 
         switch (this.color) {
 
             case "Primary": return "Primary";
-            case "Secondary": return "button.Secondary";
+            case "Secondary": return "Secondary";
 
         }
     }

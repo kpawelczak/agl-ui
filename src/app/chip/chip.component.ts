@@ -11,7 +11,7 @@ export class ChipComponent {
 
     @Input() public color: string;
 
-    getClass(color: string) {
+    getClass() {
 
         switch (this.color) {
 
