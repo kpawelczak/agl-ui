@@ -10,5 +10,4 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 		'[class.gui-button]': 'true'
 	}
 })
-export class FabricButtonComponent {
-}
+export class FabricButtonComponent {}

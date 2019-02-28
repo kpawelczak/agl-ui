@@ -1,6 +1,9 @@
 @import '../variables.scss';
 
 .gui-button {
+
+    outline: none;
+
 	background: $white;
 
 	border: {
@@ -40,17 +43,43 @@
 }
 
 .Primary {
+
+    outline: none;
+
+	background: $blue;
     
-    background: $blue-light;  
-  
-    &:hover { 
-          background:  $blue-lightest;
-    }
-    &:active {}
+	border: {
+		color: $gray-light;
+		radius: $grid / 2;
+	}
+    color: $black;
+    cursor: pointer;
+
+	font: {
+		size: 12px;
+		weight: 400;
+	}
+
+	padding: $grid / 2;
+
+	transition: background 0.2s;
+
+	&:hover {
+		background: lighten($blue-light, 10);
+	}
+
+	&:active {}
 
 	&:disabled {
-        		
+
+		border: {
+			color: $gray-lightest;
+		}
 		color: $gray-light;
-        cursor: default;
-    }
+		cursor: default;
+
+		&:hover {
+			background: $white;
+		}
+	}
 }

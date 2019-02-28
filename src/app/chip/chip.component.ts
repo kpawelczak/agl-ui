@@ -5,9 +5,6 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     templateUrl: './chip.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
-    styleUrls: ['./chip.scss'],
-    host: {
-		'[class.gui-chip]': 'true'
-	}
+    styleUrls: ['./chip.scss'],    
 })
-export class ChipComponent { }
+export class ChipComponent {}

@@ -4,6 +4,8 @@
 
     background: $white;
     
+    display: inline-block;
+
     border: solid{        
         color: $gray;
         width: 1px;
@@ -24,9 +26,18 @@
 
 .Primary {
     
-    background: $blue-light;  
+    background: $blue-light;
   
     &:hover { 
           background:  $blue-lightest;
     }	
+}
+
+.Secondary {
+
+    background: $green-light;
+  
+    &:hover { 
+          background:  $green-lightest;
+    }
 }

@@ -8,7 +8,7 @@
 
 		<ul>
 			<li>
-				<button gui-button [ngClass]="Primary">Primary</button>
+				<button gui-button [ngClass]="status ? 'Primary' : 'gui-button'" (click)="toggle_class()">Click Me!</button>
 			</li>
 
 			<li>
@@ -31,7 +31,7 @@
 
 		
 			<ul>
-				<gui-chip [ngClass]="Primary">ngClass</gui-chip>
+				<gui-chip>Primary</gui-chip>
 			</ul>
 
 			<ul>
