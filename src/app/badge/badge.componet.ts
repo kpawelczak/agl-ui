@@ -7,13 +7,15 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./badge.scss'],
     host: {
-        '[class.gui-badge]': 'true'
+        '[class.gui-badge]': 'true',
+        '[class.gui-primary]': 'primary',
+        '[class.gui-secondary]': 'secondary'
     }
 })
 
 export class BadgeComponent {
 
-    @HostBinding('class.Primary') @Input() public Primary: boolean;
-    @HostBinding('class.Secondary') @Input() public Secondary: boolean;
+    @Input() public primary: boolean;
+    @Input() public secondary: boolean;
 
 }

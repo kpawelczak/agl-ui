@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixin.scss';
 
 .gui-badge{
 
@@ -27,22 +28,7 @@
     &:hover { 
       background:  $gray-lightest;
     }
-}
-
-.Primary {
     
-    background: $blue-light;  
-  
-    &:hover { 
-          background:  $blue-lightest;
-    }    
-}
-
-.Secondary {
-    
-    background: $green-light;  
-  
-    &:hover { 
-          background:  $green-lightest;
-    }    
+    @include primary();
+    @include secondary();
 }

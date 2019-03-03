@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixin.scss';
 
 button.gui-button {
 
@@ -40,23 +41,9 @@ button.gui-button {
 			background: $white;
 		}
 	}
-}
-
-button.Primary {   
-
-	background: $blue-light;	
-
-	&:hover {
-		background: lighten($blue-light, 10);
-    }
-}
-
-button.Secondary {      	
-
-	background: $green-light;
 
 
-	&:hover {
-		background: lighten($green-light, 10);
-	}
+@include primary();
+@include secondary();
+
 }

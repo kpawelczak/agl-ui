@@ -7,13 +7,15 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./chip.scss'],
     host: {
-        '[class.gui-chip]': 'true'
+        '[class.gui-chip]': 'true',
+        '[class.gui-primary]': 'primary',
+        '[class.gui-secondary]': 'secondary'
     }
 })
 
 export class ChipComponent {
 
-    @HostBinding('class.Primary') @Input() public Primary: boolean;
-    @HostBinding('class.Secondary') @Input() public Secondary: boolean;
+    @Input() public primary: boolean;
+    @Input() public secondary: boolean;
 
 }
