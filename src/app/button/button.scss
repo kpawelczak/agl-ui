@@ -42,53 +42,21 @@ button.gui-button {
 	}
 }
 
-button.Primary {  
+button.Primary {   
 
-    outline: none;
-
-	background: $blue-light;
-
-	border: {
-		color: $gray-light;
-		radius: $grid / 2;
-	}
-	color: $black;
-	cursor: pointer;
-
-	font: {
-		size: 12px;
-		weight: 400;
-	}
-
-	padding: $grid / 2;
-
-	transition: background 0.2s;
+	background: $blue-light;	
 
 	&:hover {
-		background: lighten($blue-lightest, 10);
-	}
-
-	&:active {}
-
-	&:disabled {
-
-		border: {
-			color: $gray-lightest;
-		}
-		color: $gray-light;
-		cursor: default;
-
-		&:hover {
-			background: $white;
-		}
-	}
+		background: lighten($blue-light, 10);
+    }
 }
 
-button.Secondary {      
+button.Secondary {      	
 
 	background: $green-light;
 
+
 	&:hover {
-		background: lighten($green-lightest, 10);
-	}	
+		background: lighten($green-light, 10);
+	}
 }

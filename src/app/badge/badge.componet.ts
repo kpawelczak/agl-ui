@@ -14,5 +14,6 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
 export class BadgeComponent {
 
     @HostBinding('class.Primary') @Input() public Primary: boolean;
+    @HostBinding('class.Secondary') @Input() public Secondary: boolean;
 
 }
