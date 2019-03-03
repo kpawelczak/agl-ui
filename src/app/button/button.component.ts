@@ -10,9 +10,9 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
         '[class.gui-button]': 'true'
     }
 })
+
 export class FabricButtonComponent {
 
-    @Input() public Primary: boolean;
+    @HostBinding('class.Primary') @Input() public Primary: boolean;
 
-    @HostBinding('class.Primary') Primary;
 }

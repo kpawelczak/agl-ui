@@ -13,8 +13,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
 
 export class ChipComponent {
 
-    @Input() public Primary: boolean;
-
-    @HostBinding('class.Primary') Primary;
+    @HostBinding('class.Primary') @Input() public Primary: boolean;
+    @HostBinding('class.Secondary') @Input() public Secondary: boolean;
 
 }
