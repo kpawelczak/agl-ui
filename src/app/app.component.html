@@ -8,12 +8,11 @@
 
         <ul>
             <li>
-                <button gui-button [ngClass]="status ? 'Primary' : 'gui-button'" (click)="toggle_class()">Click
-                    Me!</button>
+                <button gui-button [primary]="true">Primary</button>
             </li>
 
             <li>
-                <button gui-button [color]="Secondary">Secondary</button>
+                <button gui-button [secondary]="true">Secondary</button>
             </li>
 
             <li>
@@ -32,15 +31,15 @@
 
 
         <ul>
-            <gui-chip [color]="Primary">Primary</gui-chip>
+            <gui-chip [primary]="true">Primary</gui-chip>
         </ul>
 
         <ul>
-            <gui-chip [color]="Secondary">Secondary</gui-chip>
+            <gui-chip [secondary]="true">Secondary</gui-chip>
         </ul>
 
         <ul>
-            <gui-chip>Accept</gui-chip>
+            <gui-chip [primary]="true">Accept</gui-chip>
         </ul>
 
         <ul>
@@ -58,13 +57,13 @@
 
         <ul>
             <button gui-button>Primary</button>
-            <gui-badge [color]="Primary">1</gui-badge>
+            <gui-badge [primary]="true">1</gui-badge>
             <gui-badge>2</gui-badge>
         </ul>
 
         <ul>
             <button gui-button>Secondary</button>
-            <gui-badge [color]="Secondary">12</gui-badge>
+            <gui-badge [secondary]="true">12</gui-badge>
         </ul>
 
         <ul>

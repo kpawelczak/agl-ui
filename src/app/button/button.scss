@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixin.scss';
 
 button.gui-button {
 
@@ -40,55 +41,9 @@ button.gui-button {
 			background: $white;
 		}
 	}
-}
 
-.Primary {  
 
-    outline: none;
+@include primary();
+@include secondary();
 
-	background: $blue-light;
-
-	border: {
-		color: $gray-light;
-		radius: $grid / 2;
-	}
-	color: $black;
-	cursor: pointer;
-
-	font: {
-		size: 12px;
-		weight: 400;
-	}
-
-	padding: $grid / 2;
-
-	transition: background 0.2s;
-
-	&:hover {
-		background: lighten($blue-lightest, 10);
-	}
-
-	&:active {}
-
-	&:disabled {
-
-		border: {
-			color: $gray-lightest;
-		}
-		color: $gray-light;
-		cursor: default;
-
-		&:hover {
-			background: $white;
-		}
-	}
-}
-
-button.Secondary {      
-
-	background: $green-light;
-
-	&:hover {
-		background: lighten($green-lightest, 10);
-	}	
 }

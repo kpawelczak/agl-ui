@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBinding } from '@angular/core';
 
 @Component({
     selector: 'gui-chip',
@@ -6,19 +6,16 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./chip.scss'],
+    host: {
+        '[class.gui-chip]': 'true',
+        '[class.gui-primary]': 'primary',
+        '[class.gui-secondary]': 'secondary'
+    }
 })
+
 export class ChipComponent {
 
-    @Input() public color: string;
-
-    getClass() {
-
-        switch (this.color) {
-
-            case "Primary": return "ChipPrimary";
-            case "Secondary": return "ChipSecondary";
-
-        }
-    }
+    @Input() public primary: boolean;
+    @Input() public secondary: boolean;
 
 }

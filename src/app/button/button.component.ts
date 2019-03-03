@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBinding } from '@angular/core';
 
 @Component({
     selector: 'button[gui-button],gui-button',
@@ -7,21 +7,15 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['./button.scss'],
     host: {
-        '[class.gui-button]': 'true'
+        '[class.gui-button]': 'true',
+        '[class.gui-primary]': 'primary',
+        '[class.gui-secondary]': 'secondary'
     }
 })
+
 export class FabricButtonComponent {
 
-    @Input() public color: string;
-
-    getClass() {
-
-        switch (this.color) {
-
-            case "Primary": return "Primary";
-            case "Secondary": return "Secondary";
-
-        }
-    }
+    @Input() public primary: boolean;
+    @Input() public secondary: boolean;
 
 }
