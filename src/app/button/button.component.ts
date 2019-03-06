@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBinding } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
     selector: 'button[gui-button],gui-button',
@@ -15,7 +15,9 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, HostBindi
 
 export class FabricButtonComponent {
 
-    @Input() public primary: boolean;
-    @Input() public secondary: boolean;
+    @Input() 
+    public primary: boolean;
+    @Input() 
+    public secondary: boolean;
 
 }
