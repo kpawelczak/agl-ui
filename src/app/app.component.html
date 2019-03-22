@@ -9,10 +9,12 @@
         <ul>
             <li>
                 <button gui-button [primary]="true">Primary</button>
+                <gui-button [primary]="true">Primary</gui-button>
             </li>
 
             <li>
                 <button gui-button [secondary]="true">Secondary</button>
+                <gui-button [secondary]="true">Secondary</gui-button>
             </li>
 
             <li>
@@ -20,7 +22,7 @@
             </li>
 
             <li>
-                <button gui-button>Cancel</button><button gui-button>Cancel</button>
+                <button gui-button>Cancel</button>
             </li>
 
         </ul>
@@ -29,54 +31,195 @@
 
     <section>
 
-
         <ul>
-            <gui-chip [primary]="true">Primary</gui-chip>
+            <li>
+                <gui-chip [primary]="true">Primary</gui-chip>
+            </li>
+
+            <li>
+                <gui-chip [secondary]="true">Secondary</gui-chip>
+            </li>
+
+            <li>
+                <gui-chip>Accept</gui-chip>
+            </li>
+
+            <li>
+                <gui-chip>Cancel</gui-chip>
+            </li>
+
         </ul>
-
-        <ul>
-            <gui-chip [secondary]="true">Secondary</gui-chip>
-        </ul>
-
-        <ul>
-            <gui-chip [primary]="true">Accept</gui-chip>
-        </ul>
-
-        <ul>
-            <gui-chip>Cancel</gui-chip>
-            <gui-chip>Cancel</gui-chip>
-        </ul>
-
-
     </section>
 
     <h2>Badges</h2>
 
     <section>
 
-
         <ul>
-            <button gui-button>Primary</button>
-            <gui-badge [primary]="true">1</gui-badge>
-            <gui-badge>2</gui-badge>
-        </ul>
+            <li>
+                <button gui-button [primary]="true">Primary</button>
+                <gui-badge [primary]="true">1</gui-badge>
+            </li>
 
+            <li>
+                <button gui-button [secondary]="true">Secondary</button>
+                <gui-badge [secondary]="true">12</gui-badge>
+            </li>
+
+            <li>
+                <button gui-button>Accept</button>
+                <gui-badge>B</gui-badge>
+                <gui-badge>C</gui-badge>
+                <gui-button>Accept</gui-button>
+            </li>
+
+            <li>
+                <button gui-button>Cancel</button>
+                <gui-badge>Badge</gui-badge>
+                <button gui-button>Cancel</button>
+            </li>
+
+        </ul>
+    </section>
+
+    <h2>Button groups</h2>
+
+    <section>
         <ul>
-            <button gui-button>Secondary</button>
-            <gui-badge [secondary]="true">12</gui-badge>
+            <li>
+                <gui-button-group>
+                    <button gui-button [primary]="true">First</button>
+                    <button gui-button [secondary]="true">Second</button>
+                    <button gui-button>Third</button>
+                </gui-button-group>
+            </li>
         </ul>
-
         <ul>
-            <gui-chip>Accept</gui-chip>
-            <gui-badge>B</gui-badge>
+            <li>
+                <gui-button-group>
+                    <button gui-button [primary]="true">First</button>
+                    <button gui-button [primary]="true">Second</button>
+                    <button gui-button [secondary]="true">Third</button>
+                    <button gui-button [secondary]="true">Fourth</button>
+                </gui-button-group>
+            </li>
         </ul>
-
         <ul>
-            <button gui-button>Cancel</button>
-            <gui-badge>Badge</gui-badge>
-            <button gui-button>Cancel</button>
+            <li>
+                <gui-button-group>
+                    <gui-button [primary]="true">First</gui-button>
+                    <gui-button [secondary]="true">Second</gui-button>
+                    <gui-button>Third</gui-button>
+                </gui-button-group>
+            </li>
         </ul>
-
-
+        <ul>
+            <li>
+                <gui-button-group>
+                    <gui-button [secondary]="true">First</gui-button>
+                    <gui-button [primary]="true">Second</gui-button>
+                    <button gui-button>Third</button>
+                    <button gui-button>Fourth</button>
+                </gui-button-group>
+            </li>
+        </ul>
+    </section>
+    <h2>Toggle buttons</h2>
+    <section>
+        <ul>
+            <li>
+                <gui-button-toggle [primary]="true" [checked]="true">Primary</gui-button-toggle>
+                <gui-button-toggle [secondary]="true">Secondary</gui-button-toggle>
+                <gui-button-toggle>Toggle Button</gui-button-toggle>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <gui-button-group>
+                    <gui-button-toggle [primary]="true">First</gui-button-toggle>
+                    <gui-button-toggle [secondary]="true" [checked]="true">Second</gui-button-toggle>
+                    <gui-button-toggle>Third</gui-button-toggle>
+                </gui-button-group>
+            </li>
+        </ul>
+    </section>
+    <h2>Checkboxes</h2>
+    <section>
+        <ul>
+            <li>
+                <gui-checkbox [checked]="true" [name]="'checkbox'">Primary</gui-checkbox>
+            </li>
+            <li>
+                <gui-checkbox>Secondary</gui-checkbox>
+            </li>
+            <li>
+                <gui-radio-button [checked]="true" [name]="'one'">Radio button one</gui-radio-button>
+            </li>
+            <li>
+                <gui-radio-button [name]="'two'">Radio button two</gui-radio-button>
+            </li>
+        </ul>
+    </section>
+    <h2>Radio button group</h2>
+    <section>
+        <ul>
+            <li>
+                <gui-radio-group>
+                    <gui-radio-button [name]="'same'" [checked]="true">Radio one</gui-radio-button>
+                    <gui-radio-button [name]="'same'">Radio two</gui-radio-button>
+                    <gui-radio-button [name]="'same'">Radio three</gui-radio-button>
+                    <gui-radio-button [name]="'same'">Radio four</gui-radio-button>
+                </gui-radio-group>
+            </li>
+        </ul>
+    </section>
+    <h2>Progress bar</h2>
+    <section>
+        <ul>
+            <li style='width:50%'>
+                <gui-progress-bar [width]="1250"></gui-progress-bar>
+                <gui-progress-bar [height]="25" [textTop]="'15%'" [progress]="10" style='color:azure'>10%
+                </gui-progress-bar>
+                <gui-progress-bar [progress]="25" [primary]="true">25%</gui-progress-bar>
+                <gui-progress-bar [progress]="50" [secondary]="true">50%</gui-progress-bar>
+                <gui-progress-bar [progress]="75" [color]="'limegreen'" [textAlign]="'left'">75%</gui-progress-bar>
+            </li>
+        </ul>
+    </section>
+    <h2>Spinner</h2>
+    <section>
+        <ul>
+            <li>
+                <gui-spinner></gui-spinner>
+            </li>
+            <li>
+                <gui-spinner [width]="30" [diameter]="150" [primary]="true"></gui-spinner>
+            </li>
+            <li>
+                <gui-spinner [width]="15" [diameter]="80" [secondary]="true"></gui-spinner>
+            </li>
+            <li>
+                <gui-spinner [color]="'DarkTurquoise'"></gui-spinner>
+            </li>
+        </ul>
+    </section>
+    <h2>Progress Spinner</h2>
+    <section>
+        <ul>
+            <li>
+                <gui-progress-spinner [value]="25"></gui-progress-spinner>
+            </li>
+            <li>
+                <gui-progress-spinner [mode]="'spin'" [value]="30" [diameter]="150" [width]="10" [primary]="true">
+                </gui-progress-spinner>
+            </li>
+            <li>
+                <gui-progress-spinner [width]="15" [value]="50" [diameter]="150" [secondary]="true">
+                </gui-progress-spinner>
+            </li>
+            <li>
+                <gui-progress-spinner [value]="90" [color]="'MediumSeaGreen'"></gui-progress-spinner>
+            </li>
+        </ul>
     </section>
 </article>
