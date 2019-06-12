@@ -27,7 +27,7 @@ UI includes:
 * toggle button
 * toggle-button-group
 * chip and badge
-* radio button and checkboxe
+* radio button and checkbox
 * progress bar
 * progress spinner and spinner
 * input
