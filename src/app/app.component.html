@@ -248,6 +248,25 @@ Theme:
       </li>
     </ul>
   </section>
+  <h2>Dropdown</h2>
+  <section>
+    <gui-dropdown>
+      <gui-dropdown-item>item one</gui-dropdown-item>
+      <gui-dropdown-item>item two</gui-dropdown-item>
+    </gui-dropdown>
+    <gui-dropdown
+      [placement]="placementRight"
+      [dropdownText]="'Open right'">
+      <gui-dropdown-item>item one</gui-dropdown-item>
+      <gui-dropdown-item>item two</gui-dropdown-item>
+    </gui-dropdown>
+    <gui-dropdown
+      [placement]="placementLeft"
+      [dropdownText]="'Open left'">
+      <gui-dropdown-item>item one</gui-dropdown-item>
+      <gui-dropdown-item>item two</gui-dropdown-item>
+    </gui-dropdown>
+  </section>
   <h2>Input</h2>
   <section>
     <ul>

@@ -7,6 +7,7 @@ import { FabricButtonGroupModule } from 'util/fabric/ui/buttons-indicators/butto
 import { FabricCardModule } from 'util/fabric/ui/layout/card/fabric-card.module';
 import { FabricCheckboxModule } from 'util/fabric/ui/form/checkbox/fabric-checkbox.module';
 import { FabricChipModule } from 'util/fabric/ui/buttons-indicators/chip/fabric-chip.module';
+import { FabricDropdownModule } from './form/modals/dropdown/fabric-dropdown.module';
 import { FabricProgressBarModule } from 'util/fabric/ui/progress-bar/fabric-progress-bar.module';
 import { FabricProgressSpinnerModule } from 'util/fabric/ui/spinners/progress-spinner/fabric-progress-spinner.module';
 import { FabricRadioButtonModule } from 'util/fabric/ui/form/radio-button/fabric-radio-button.module';
@@ -17,6 +18,7 @@ import { FabricToggleButtonModule } from 'util/fabric/ui/buttons-indicators/togg
 import { FabricToggleButtonGroupModule } from 'util/fabric/ui/buttons-indicators/toggle-button-group/fabric-toggle-button-group.module';
 import { FabricInputModule } from 'util/fabric/ui/form/input/fabric-input.module';
 
+
 const modules = [
   FabricBadgeModule,
   FabricButtonModule,
@@ -24,6 +26,7 @@ const modules = [
   FabricCardModule,
   FabricCheckboxModule,
   FabricChipModule,
+  FabricDropdownModule,
   FabricRadioButtonModule,
   FabricRadioGroupModule,
   FabricProgressBarModule,

@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Renderer2, ViewChild } 
 import { NgModel } from '@angular/forms';
 
 import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mode';
+import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
 
 @Component({
   selector: 'app-component',
@@ -15,6 +16,8 @@ export class AppComponent {
   ngModel: NgModel;
 
   spinnerMode: SpinnerMode = SpinnerMode.Spin;
+  placementRight: Placement = Placement.Right;
+  placementLeft: Placement = Placement.Left;
 
   constructor(private renderer: Renderer2,
               private el: ElementRef) {
