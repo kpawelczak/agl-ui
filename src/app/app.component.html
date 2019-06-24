@@ -303,17 +303,82 @@ Theme:
     <ul>
       <li>
         <gui-card
-          [title]="'Koczkodan Rudy'"
+          [title]="'Patas Monkey'"
           [image]="'https://images.freeimages.com/images/large-previews/a05/patas-monkey-1309205.jpg'">
           <div style="margin-bottom: 8px">
-            Koczkodan rudy, patas rudy, patas, huzar zwykły, huzar rudy (Erythrocebus patas) – afrykański gatunek ssaka z rodziny koczkodanowatych
-            (Cercopithecidae) o stosunkowo ciężkiej budowie ciała, jeden z największych przedstawicieli rodziny.
+            Ut sem viverra aliquet eget sit amet. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Elit sed vulputate mi sit amet mauris. Suspendisse sed nisi lacus sed. Diam volutpat commodo sed egestas egestas fringilla phasellus. Nunc pulvinar sapien et ligula ullamcorper.
           </div>
           <button gui-button [primary]="true">Add</button>
         </gui-card>
       </li>
     </ul>
     <br>
+  </section>
+  <section>
+    <h2>Nav Tab</h2>
+    <div style="width: 550px">
+      <gui-tab [menu]="['Text', 'Code', 'Nba Draft 2019']" [active]="'Text'">
+
+        <gui-tab-item [tab]="'Text'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+        </gui-tab-item>
+
+        <gui-tab-item [tab]="'Code'">
+          <ul class="tab-code">
+            <li>
+              &lt;gui-tab
+              <p class="tab-code-input">[menu]</p>
+              =
+              <p class="tab-code-input-value">"['Example', 'Code', 'Third']"</p>
+              <p class="tab-code-input">[active]</p>
+              =
+              <p class="tab-code-input-value">"'Text'"</p>&gt;
+            </li>
+            <li class="tab-code-item">
+              &lt;gui-tab-item
+              <p class="tab-code-input">[tab]</p>
+              =
+              <p class="tab-code-input-value">"'Text'"</p>>
+              <p class="tab-code-html-content">Lorem ipsum...</p>
+              &lt;/gui-tab-item&gt;
+            </li>
+            <li class="tab-code-item">&lt;gui-tab-item <p class="tab-code-input">[tab]</p>
+              =
+              <p class="tab-code-input-value">"'Code'"</p>>
+              <p class="tab-code-html-content">Code...</p>
+              &lt;/gui-tab-item&gt;
+            </li>
+            <li class="tab-code-item">
+              &lt;gui-tab-item
+              <p class="tab-code-input">[tab]</p>
+              =
+              <p class="tab-code-input-value">"'Nba Draft 2019'"</p>>
+              <p class="tab-code-html-content">Nba draft 2019...</p>
+              &lt;/gui-tab-item&gt;
+            </li>
+            <li>&lt;/gui-tab&gt;</li>
+          </ul>
+        </gui-tab-item>
+
+        <gui-tab-item [tab]="'Nba Draft 2019'">
+          <h3>NBA 2019 DRAFT PICKS</h3>
+          <ul>
+            <li>1. Zion Williamson - New Orleans Pelicans</li>
+            <li>2. Ja Morant - Memphis Grizzlies</li>
+            <li>3. R. J. Barrett - New York Knicks</li>
+            <li>4. De'Andre Hunter - Los Angeles Lakers (traded to Atlanta)</li>
+            <li>5. Darius Garland - Cleveland Cavaliers</li>
+            <li>6. Jarret Culver - Phoenix Suns (traded to Minnesota)</li>
+            <li>7. Coby White - Chicago Bulls</li>
+            <li>8. Jaxson Hayes - Atlanta Hawks (traded to New Orleans)</li>
+            <li>9. Rui Hachimura - Washington Wizard</li>
+            <li>10. Cam Reddish - Atlanta Hawks (acquired from Dallas)</li>
+          </ul>
+        </gui-tab-item>
+      </gui-tab>
+    </div>
   </section>
   <section style='margin-bottom: 150px'></section>
 </article>

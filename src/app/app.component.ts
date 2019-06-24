@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { NgModel } from '@angular/forms';
+import { ChangeDetectionStrategy, Component, ElementRef, Renderer2 } from '@angular/core';
 
 import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mode';
 import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
@@ -11,9 +10,6 @@ import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-
-  @ViewChild('ngModel', { read: NgModel })
-  ngModel: NgModel;
 
   spinnerMode: SpinnerMode = SpinnerMode.Spin;
   placementRight: Placement = Placement.Right;

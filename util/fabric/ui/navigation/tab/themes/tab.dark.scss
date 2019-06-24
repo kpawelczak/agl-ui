@@ -1,0 +1,23 @@
+@import 'util/fabric/ui/themes/dark/dark.variables.scss';
+
+#{$dark-selector} {
+
+  .gui-tab {
+    color: $basic-text;
+
+    .gui-tab-content {
+      background: $basic-background;
+      border-color: $border-color;
+    }
+
+    .gui-tab-menu-item {
+      border-color: $border-color $border-color $basic-background $border-color;
+    }
+
+    .gui-active {
+      &.gui-tab-menu-item {
+        background: $basic-background;
+      }
+    }
+  }
+}

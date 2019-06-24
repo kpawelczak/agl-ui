@@ -1,0 +1,15 @@
+<div #tab
+     class="gui-tab-menu">
+  <div
+    *ngFor="let tab of menu"
+    (click)="toggleTab(tab)"
+    [attr.data-tab]="tab"
+    class="gui-tab-menu-item">
+    {{tab}}
+  </div>
+  <div #tabitem
+       class="gui-tab-content">
+    <ng-content></ng-content>
+  </div>
+</div>
+

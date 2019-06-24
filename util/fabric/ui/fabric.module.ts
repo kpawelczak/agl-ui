@@ -17,6 +17,7 @@ import { FabricSpinnerModule } from 'util/fabric/ui/spinners/spinner/fabric-spin
 import { FabricToggleButtonModule } from 'util/fabric/ui/buttons-indicators/toggle-button/fabric-toggle-button.module';
 import { FabricToggleButtonGroupModule } from 'util/fabric/ui/buttons-indicators/toggle-button-group/fabric-toggle-button-group.module';
 import { FabricInputModule } from 'util/fabric/ui/form/input/fabric-input.module';
+import { FabricTabModule } from './navigation/tab/fabric-tab.module';
 
 
 const modules = [
@@ -27,6 +28,7 @@ const modules = [
   FabricCheckboxModule,
   FabricChipModule,
   FabricDropdownModule,
+  FabricTabModule,
   FabricRadioButtonModule,
   FabricRadioGroupModule,
   FabricProgressBarModule,
