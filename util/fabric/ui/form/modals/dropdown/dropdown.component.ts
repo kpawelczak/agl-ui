@@ -63,6 +63,9 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
   containerHeight: number;
   windowSize: number;
 
+  openHorizontal: number;
+  openVertical: number;
+
   private canOpenDownward: boolean;
   private canOpenUpward: boolean;
   private open: boolean = false;
@@ -121,23 +124,20 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
     this.geometryService.changeGeometry(this.containerRef, this.dropdownMenuRef, this.windowSize);
 
     if (this.canOpenDownward || !this.canOpenUpward) {
-      this.openDownward();
+      this.openVertical = this.containerHeight;
     } else {
-      this.openUpward();
+      this.openVertical = -(this.containerHeight * 2);
     }
 
     if (this.placement === Placement.Right) {
-      this.startRight();
-      this.removeStyle('top');
-      this.removeStyle('bottom');
+      this.openVertical = 0;
+      this.openHorizontal = this.containerWidth;
     }
 
     if (this.placement === Placement.Left) {
-      this.startLeft();
-      this.removeStyle('top');
-      this.removeStyle('bottom');
+      this.openVertical = 0;
+      this.openHorizontal = -(this.containerWidth + 1);
     }
-
   }
 
   private observeGeometry() {
@@ -162,24 +162,6 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
     }
   }
 
-  private openDownward(): void {
-    this.removeStyle('bottom');
-    this.setStyle('top', `${this.containerHeight}.px`);
-  }
-
-  private openUpward(): void {
-    this.removeStyle('top');
-    this.setStyle('bottom', `${this.containerHeight}.px`);
-  }
-
-  private startRight(): void {
-    this.setStyle('left', `${this.containerWidth}.px`);
-  }
-
-  private startLeft(): void {
-    this.setStyle('left', `-${this.containerWidth + 2}.px`);
-  }
-
   private hideItems(): void {
     const itemsElHasOpenClass = this.elementRef.nativeElement.classList.contains('gui-menu-opened');
 
@@ -202,13 +184,5 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
 
   private removeClass(element: ElementRef, name: string) {
     this.renderer.removeClass(element, name);
-  }
-
-  private setStyle(style: string, value: string) {
-    this.renderer.setStyle(this.dropdownMenuRef.nativeElement, style, value);
-  }
-
-  private removeStyle(style: string) {
-    this.renderer.removeStyle(this.dropdownMenuRef.nativeElement, style);
   }
 }
