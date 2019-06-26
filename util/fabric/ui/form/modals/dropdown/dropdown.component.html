@@ -7,7 +7,8 @@
   <span [ngClass]="{'gui-dropdown-arrow': isArrowEnabled}"></span>
   <div #dropdownMenu
        [style.left.px]="openHorizontal"
-       [style.top.px]="openVertical"
+       [style.top.px]="openBottom"
+       [style.bottom.px]="openTop"
        class="gui-dropdown-menu">
     <ng-content></ng-content>
   </div>

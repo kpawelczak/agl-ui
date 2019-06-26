@@ -64,7 +64,8 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
   windowSize: number;
 
   openHorizontal: number;
-  openVertical: number;
+  openBottom: number;
+  openTop: number;
 
   private canOpenDownward: boolean;
   private canOpenUpward: boolean;
@@ -124,19 +125,17 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
     this.geometryService.changeGeometry(this.containerRef, this.dropdownMenuRef, this.windowSize);
 
     if (this.canOpenDownward || !this.canOpenUpward) {
-      this.openVertical = this.containerHeight;
+      this.openDownward();
     } else {
-      this.openVertical = -(this.containerHeight * 2);
+      this.openUpward();
     }
 
     if (this.placement === Placement.Right) {
-      this.openVertical = 0;
-      this.openHorizontal = this.containerWidth;
+      this.startRight();
     }
 
     if (this.placement === Placement.Left) {
-      this.openVertical = 0;
-      this.openHorizontal = -(this.containerWidth + 1);
+      this.startLeft();
     }
   }
 
@@ -150,6 +149,28 @@ export class FabricDropdownComponent implements OnChanges, OnInit {
               this.canOpenUpward = geometry.canOpenUpward();
               this.canOpenDownward = geometry.canOpenDownward();
             });
+  }
+
+  private openDownward(): void {
+    this.openTop = null;
+    this.openBottom = this.containerHeight;
+  }
+
+  private openUpward(): void {
+    this.openBottom = null;
+    this.openTop = this.containerHeight;
+  }
+
+  private startRight(): void {
+    this.openBottom = 0;
+    this.openTop = null;
+    this.openHorizontal = this.containerWidth;
+  }
+
+  private startLeft(): void {
+    this.openBottom = 0;
+    this.openTop = null;
+    this.openHorizontal = -(this.containerWidth + 1);
   }
 
   private changePlacement() {
