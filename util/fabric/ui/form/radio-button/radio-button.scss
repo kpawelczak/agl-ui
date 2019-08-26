@@ -30,6 +30,7 @@ $line-height: $radio-checkmark-size + $border-width * 2;
 	}
 
 	.gui-radio-checkmark {
+		box-sizing: content-box;
 		border: {
 			color: $border-color;
 			radius: 50%;
@@ -62,6 +63,7 @@ $line-height: $radio-checkmark-size + $border-width * 2;
 	}
 
 	input:checked + .gui-radio-checkmark:after {
+		box-sizing: content-box;
 		display: block;
 	}
 

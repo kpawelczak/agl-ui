@@ -1,21 +1,23 @@
 @import 'util/fabric/ui/variables.scss';
 @import 'util/fabric/ui/mixins.scss';
 
-$margin-bottom: $grid;
+$margin-bottom: $grid*1.5;
 $padding: $grid*2.5;
 $padding-card-list: $grid*1.5 $grid*2.5;
-$body-width: 240px;
+$body-width: 350px;
 
 .gui-card {
 
 	.gui-card-img {
+
 		margin: 0 0 $margin-bottom 0;
-		width: $body-width - $padding*2;
+		border-radius: $border-radius $border-radius 0 0;
+		width: $body-width;
 		height: auto;
-		padding: 0 $padding;
 	}
 
 	.gui-card-body {
+		box-sizing: border-box;
 		background: $white;
 		border: {
 			color: $border-color;
@@ -23,10 +25,11 @@ $body-width: 240px;
 			width: 1px;
 			radius: $border-radius;
 		}
-		width: $body-width;
+		width: $body-width + 2px;
 		margin: 0;
-		padding: $padding 0;
-		font: $font;
+		padding: 0 0 $padding 0;
+		font-family: Roboto, "Helvetica Neue", sans-serif;
+		font-size: 14px;
 
 		.gui-card-title {
 			font-size: 20px;

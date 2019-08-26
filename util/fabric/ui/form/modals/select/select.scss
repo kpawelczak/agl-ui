@@ -11,6 +11,7 @@ $selected-background: $gray-lightest;
 .gui-select {
 
 	.gui-select-container {
+		box-sizing: content-box;
 		background: $white;
 		border: {
 			color: $border-color;
@@ -51,6 +52,7 @@ $selected-background: $gray-lightest;
 			animation: close 0.1s forwards;
 
 			.gui-option {
+				box-sizing: content-box;
 				padding: $padding;
 				list-style-type: none;
 

@@ -4,7 +4,8 @@
 	class="gui-progress-spinner">
 	<svg
 		[style.width.px]="circleSize"
-		[style.height.px]="circleSize">
+		[style.height.px]="circleSize"
+		class="circle-outer">
 		<circle
 			[style.stroke-dashoffset]="valuePercentage"
 			[style.stroke-dasharray]="circumference"
@@ -12,8 +13,13 @@
 			[style.stroke]="color"
 			[attr.r]="r"
 			cx="50%"
-			cy="50%"
-		/>
+			cy="50%">
+		</circle>
+	</svg>
+	<svg
+		[style.width.px]="circleSize"
+		[style.height.px]="circleSize"
+		class="circle-inner">
 		<circle
 			[style.stroke-dashoffset]="circumference"
 			[style.stroke-dasharray]="croppedCircle"
@@ -21,7 +27,7 @@
 			[style.stroke]="color"
 			[attr.r]="r"
 			cx="50%"
-			cy="50%"
-		/>
+			cy="50%">
+		</circle>
 	</svg>
 </div>

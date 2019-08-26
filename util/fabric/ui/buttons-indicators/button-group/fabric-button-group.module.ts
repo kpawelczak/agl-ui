@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { FabricButtonGroupComponent } from 'util/fabric/ui/buttons-indicators/button-group/button-group.component';
 
-import 'util/fabric/ui/buttons-indicators/button-group/button-group.scss';
 
 @NgModule({
 	imports: [

@@ -1,7 +1,12 @@
 @import 'util/fabric/ui/variables.scss';
 
+$box-shadow-width: $grid*1.25;
+$box-shadow-spread: -$box-shadow-width/2;
+
 .gui-checked .gui-button {
-	background: $basic;
+	background: $basic-background;
+	//box-shadow: inset 0 $box-shadow-width 0 $box-shadow-spread $basic-active;
+	box-shadow: $box-shadow;
 	color: $black;
 
 	&:hover {
@@ -38,12 +43,16 @@
 	}
 
 	&.gui-primary {
-		background: $primary-active;
+		background: $primary;
+		//box-shadow: inset 0 $box-shadow-width 0 $box-shadow-spread darken($primary-active, 5);
+		box-shadow: $box-shadow-primary;
 		color: $white;
 	}
 
 	&.gui-secondary {
-		background: $secondary-active;
+		background: $secondary;
+		//box-shadow: inset 0 $box-shadow-width 0 $box-shadow-spread darken($secondary-active, 5);
+		box-shadow: $box-shadow-secondary;
 		color: $white;
 	}
 }

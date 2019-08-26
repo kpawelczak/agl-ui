@@ -4,10 +4,7 @@
 #{$dark-selector} {
 
 	.gui-chip {
-		background: $basic-background;
-		border: {
-			color: $border-color
-		}
+		background: $black;
 		color: $basic-text;
 
 		@include primary();

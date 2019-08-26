@@ -16,6 +16,7 @@ $blue-dark: darken($blue, 5);
 $gray: #424242;
 $gray-dark: #212121;
 $gray-light: #616161;
+$gray-lighter:#595959;
 $gray-lightest: #757575;
 
 // Purple : Purple 50
@@ -81,5 +82,12 @@ $badge-font-size: 12px;
 
 $border-radius: $grid / 2;
 $border-color: $basic-light;
+$fill-color: lighten($basic-light, 15);
 
 $disabled: #C5CAE9;
+
+$box-shadow-width: $grid*1.25;
+$box-shadow-spread: -$box-shadow-width/2;
+
+$box-shadow-primary: inset 0 $box-shadow-width 0 $box-shadow-spread $primary-active;
+$box-shadow-secondary: inset 0 $box-shadow-width 0 $box-shadow-spread $secondary-active;

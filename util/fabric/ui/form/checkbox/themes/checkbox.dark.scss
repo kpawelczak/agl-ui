@@ -7,11 +7,11 @@
 		color: $basic-text;
 
 		.gui-checkmark {
-			border-color: $border-color;
+			border-color: $fill-color;
 		}
 
 		input:checked + .gui-checkmark {
-			border-color: $border-color;
+			border-color: $fill-color;
 		}
 
 		input:focus + .gui-checkmark {
@@ -19,7 +19,7 @@
 		}
 
 		.gui-checkmark:after {
-			border-color: $basic-light;
+			border-color: $fill-color;
 		}
 
 		&.gui-disabled.gui-checkbox {

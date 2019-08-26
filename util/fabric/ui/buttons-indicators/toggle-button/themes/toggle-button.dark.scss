@@ -8,7 +8,6 @@
 	}
 
 	.gui-checked .gui-button {
-		background: $basic-active;
 		color: $basic-text;
 
 		&:hover {
@@ -38,12 +37,14 @@
 		}
 
 		&.gui-primary {
-			background: $primary-active;
+			background: $primary;
+			box-shadow: $box-shadow-primary;
 			color: $ps-text;
 		}
 
 		&.gui-secondary {
-			background: $secondary-active;
+			background: $secondary;
+			box-shadow: $box-shadow-secondary;
 			color: $ps-text;
 		}
 	}

@@ -7,11 +7,11 @@
 		color: $basic-text;
 
 		.gui-radio-checkmark {
-			border-color: $border-color;
+			border-color: $fill-color;
 		}
 
 		input:checked + .gui-radio-checkmark {
-			border-color: $border-color;
+			border-color: $fill-color;
 		}
 
 		input:focus + .gui-radio-checkmark {
@@ -19,7 +19,7 @@
 		}
 
 		.gui-radio-checkmark:after {
-			background: $basic-light;
+			background: $fill-color;
 		}
 
 		&.gui-disabled.gui-radio-button {

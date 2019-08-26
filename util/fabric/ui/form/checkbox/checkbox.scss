@@ -5,12 +5,12 @@ $border-width: 1px;
 $checkmark-size: $grid * 2;
 $checkmark-width: $grid / 2;
 $padding-left: $grid * 4;
-$line-height: $checkmark-size + $border-width * 2;
+$checkbox-height: $checkmark-size + $border-width * 2;
 
 .gui-checkbox {
 	display: inline-block;
 	font: $font;
-	line-height: $line-height;
+	line-height: $checkbox-height;
 	padding-left: $padding-left;
 	position: relative;
 	@include disableTextSelect();
@@ -31,6 +31,7 @@ $line-height: $checkmark-size + $border-width * 2;
 	}
 
 	.gui-checkmark {
+		box-sizing: content-box;
 		border: {
 			color: $border-color;
 			radius: $border-radius;
@@ -63,6 +64,7 @@ $line-height: $checkmark-size + $border-width * 2;
 	}
 
 	input:checked + .gui-checkmark:after {
+		box-sizing: content-box;
 		display: block;
 	}
 

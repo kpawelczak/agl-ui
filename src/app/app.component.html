@@ -263,16 +263,10 @@ Theme:
 				<gui-spinner [color]="'DarkTurquoise'"></gui-spinner>
 			</li>
 			<li>
-				<gui-spinner [width]="40"></gui-spinner>
-				<gui-spinner [width]="25" [primary]="true"></gui-spinner>
-				<gui-spinner [width]="15" [secondary]="true"></gui-spinner>
-				<gui-spinner [width]="1" [color]="'DarkTurquoise'"></gui-spinner>
-			</li>
-			<li>
-				<gui-spinner [diameter]="150" [primary]="true"></gui-spinner>
-				<gui-spinner [diameter]="125" [color]="'brown'"></gui-spinner>
-				<gui-spinner [diameter]="100" [color]="'pink'"></gui-spinner>
-				<gui-spinner [diameter]="75" [color]="'gold'"></gui-spinner>
+				<gui-spinner [diameter]="150" [width]="15" [primary]="true"></gui-spinner>
+				<gui-spinner [diameter]="125" [width]="10" [color]="'brown'"></gui-spinner>
+				<gui-spinner [diameter]="100" [width]="8" [color]="'pink'"></gui-spinner>
+				<gui-spinner [diameter]="75" [width]="1" [color]="'DarkTurquoise'"></gui-spinner>
 			</li>
 		</ul>
 
@@ -284,7 +278,7 @@ Theme:
 
 		<ul>
 			<li>
-				<gui-progress-spinner [value]="75"></gui-progress-spinner>
+				<gui-progress-spinner [value]="75" [primary]="true"></gui-progress-spinner>
 				<gui-progress-spinner [value]="90" [color]="'pink'"></gui-progress-spinner>
 				<gui-progress-spinner [width]="15" [value]="50" [diameter]="150" [secondary]="true">
 				</gui-progress-spinner>
@@ -365,7 +359,7 @@ Theme:
 
 				<gui-card
 					[title]="'Card Title'"
-					[image]="'https://via.placeholder.com/200x100'"
+					[image]="'https://via.placeholder.com/450x350'"
 					[contentBlock]="['Example content block item one', 'Example content block item two']">
 					<div style="margin-bottom: 8px">
 						Some example description to showcase content of gui-card component

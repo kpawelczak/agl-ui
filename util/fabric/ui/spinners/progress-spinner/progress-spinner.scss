@@ -4,13 +4,9 @@
 .gui-progress-spinner {
 	@include gui-spinner();
 
-	circle {
-		@include gui-circle();
-	}
-
 	.gui-animations-disabled &.gui-progress-spinner {
 
-		circle {
+		.circle-outer {
 			animation: none;
 		}
 
@@ -21,7 +17,7 @@
 
 	.gui-second-circle-disabled &.gui-progress-spinner {
 
-		circle:nth-child(2) {
+		.circle-inner {
 			opacity: 0;
 		}
 	}

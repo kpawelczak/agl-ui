@@ -2,53 +2,54 @@
 @import 'util/fabric/ui/mixins.scss';
 
 $border-width: 1px;
-$padding: $grid $grid*4 $grid $grid*1.5;
+$padding: $grid $grid*2;
 
 .gui-tab {
 
-  font: $font;
-  background: $white;
+	font: $font;
+	background: $white;
 
-  .gui-tab-content {
-    background: transparent;
-    border: {
-      style: solid;
-      width: $border-width;
-      radius: 0 0 $border-radius $border-radius;
-      color: $border-color;
-    }
-    padding: $grid*1.5;
-  }
+	.gui-tab-content {
+		background: transparent;
+		border: {
+			style: solid;
+			width: $border-width;
+			radius: 0 0 $border-radius $border-radius;
+			color: $border-color;
+		}
+		padding: $grid*1.5;
+	}
 
-  .gui-tab-menu-item {
-    position: relative;
-    display: inline-block;
-    padding: $padding;
-    cursor: pointer;
-    z-index: 1;
-    bottom: -1px;
-  }
+	.gui-tab-menu-item {
+		position: relative;
+		bottom: -1px;
+		cursor: pointer;
+		display: inline-block;
+		padding: $padding;
+		text-align: center;
+		z-index: 1;
+	}
 
-  .gui-tab-item {
-    display: none;
-  }
+	.gui-tab-item {
+		display: none;
+	}
 
-  .gui-active {
+	.gui-active {
 
-    &.gui-tab-menu-item {
-      background: $white;
-      border: {
-        color: $border-color $border-color $white $border-color;
-        style: solid;
-        width: $border-width;
-        radius: $border-radius $border-radius 0 0;
-      };
-    }
+		&.gui-tab-menu-item {
+			background: $white;
+			border: {
+				color: $border-color $border-color $white $border-color;
+				style: solid;
+				width: $border-width;
+				radius: $border-radius $border-radius 0 0;
+			};
+		}
 
-    &.gui-tab-item {
-      display: block;
-    }
-  }
+		&.gui-tab-item {
+			display: block;
+		}
+	}
 
 }
 

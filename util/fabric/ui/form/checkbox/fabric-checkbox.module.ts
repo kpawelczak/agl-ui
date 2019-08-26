@@ -3,16 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { FabricCheckboxComponent } from 'util/fabric/ui/form/checkbox/checkbox.component';
 
+
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    FabricCheckboxComponent
-  ],
-  exports: [
-    FabricCheckboxComponent
-  ]
+	imports: [
+		CommonModule
+	],
+	declarations: [
+		FabricCheckboxComponent
+	],
+	exports: [
+		FabricCheckboxComponent
+	]
 })
 export class FabricCheckboxModule {
 }

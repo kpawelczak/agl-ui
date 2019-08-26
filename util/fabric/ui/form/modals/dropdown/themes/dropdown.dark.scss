@@ -6,49 +6,49 @@ $selected-background: $gray-lightest;
 
 #{$dark-selector} {
 
-  .gui-dropdown {
+	.gui-dropdown {
 
-    .gui-dropdown-container {
-      background: $basic-background;
-      border-color: $border-color;
-      color: $basic-text;
+		.gui-dropdown-container {
+			background: $basic-background;
+			border-color: $border-color;
+			color: $basic-text;
 
-      &:hover {
-        border-color: $primary;
-      }
+			&:hover {
+				border-color: $primary;
+			}
 
-      .gui-dropdown-arrow {
-        border-color: $arrow-color transparent transparent transparent;
-      }
+			.gui-dropdown-arrow {
+				border-color: $arrow-color transparent transparent transparent;
+			}
 
-      .gui-dropdown-menu {
-        border-color: $border-select-color;
+			.gui-dropdown-menu {
+				border-color: $border-select-color;
 
-        .gui-item {
-          border-top: {
-            color: $gray-lightest;
-          }
+				.gui-item {
+					border-top: {
+						color: $gray-lightest;
+					}
 
-          &:hover {
-            background: $gray-light;
-          }
-        }
-      }
-    }
+					&:hover {
+						background: $gray-light;
+					}
+				}
+			}
+		}
 
-    &.gui-options-opened {
+		&.gui-options-opened {
 
-      .gui-dropdown-container {
-        border-color: $border-select-color;
-      }
+			.gui-dropdown-container {
+				border-color: $border-select-color;
+			}
 
-      .gui-dropdown-arrow {
-        border-color: transparent transparent $arrow-color transparent;
-      }
-    }
+			.gui-dropdown-arrow {
+				border-color: transparent transparent $arrow-color transparent;
+			}
+		}
 
-    .gui-disabled {
-      opacity: 0.36;
-    }
-  }
+		.gui-disabled {
+			opacity: 0.36;
+		}
+	}
 }

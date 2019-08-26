@@ -6,17 +6,17 @@ import { DropdownItemComponent } from 'util/fabric/ui/form/modals/dropdown/dropd
 
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    FabricDropdownComponent,
-    DropdownItemComponent
-  ],
-  exports: [
-    FabricDropdownComponent,
-    DropdownItemComponent
-  ]
+	imports: [
+		CommonModule
+	],
+	declarations: [
+		FabricDropdownComponent,
+		DropdownItemComponent
+	],
+	exports: [
+		FabricDropdownComponent,
+		DropdownItemComponent
+	]
 })
 export class FabricDropdownModule {
 }

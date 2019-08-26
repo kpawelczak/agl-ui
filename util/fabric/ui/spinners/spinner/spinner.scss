@@ -6,10 +6,6 @@
 .gui-spinner {
 	@include gui-spinner();
 
-	circle {
-		@include gui-circle();
-	}
-
 	.gui-primary &.gui-spinner circle {
 		stroke: $primary;
 	}
@@ -18,3 +14,5 @@
 		stroke: $secondary;
 	}
 }
+
+

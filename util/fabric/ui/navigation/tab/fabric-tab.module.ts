@@ -6,17 +6,17 @@ import { TabItemComponent } from 'util/fabric/ui/navigation/tab/tab-item/tab-ite
 
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    FabricTabComponent,
-    TabItemComponent
-  ],
-  exports: [
-    FabricTabComponent,
-    TabItemComponent
-  ]
+	imports: [
+		CommonModule
+	],
+	declarations: [
+		FabricTabComponent,
+		TabItemComponent
+	],
+	exports: [
+		FabricTabComponent,
+		TabItemComponent
+	]
 })
 export class FabricTabModule {
 }

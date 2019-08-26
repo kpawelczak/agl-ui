@@ -25,7 +25,7 @@ $selected-background: $gray-lightest;
 				border-color: $border-select-color;
 
 				.gui-option {
-					border-top: {
+					border: {
 						color: $gray-lightest;
 					}
 
@@ -41,9 +41,15 @@ $selected-background: $gray-lightest;
 			.gui-select-container {
 				border-color: $border-select-color;
 			}
+		}
 
-			.gui-select-arrow {
-				border-color: transparent transparent $arrow-color transparent;
+		&.gui-upward {
+
+			.gui-select-container {
+
+				.gui-select-arrow {
+					border-color: transparent transparent $arrow-color transparent;
+				}
 			}
 		}
 

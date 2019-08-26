@@ -1,12 +1,12 @@
 <div class="gui-card-body"
 	 [ngClass]="{'gui-content-block': isOnlyContentBlockEnabled()}">
 
+	<img [ngClass]="{'gui-card-img': isImgEnabled()}"
+		 src="{{image}}"/>
+
 	<div [ngClass]="{'gui-card-title': isTitleEnabled()}">
 		{{title}}
 	</div>
-
-	<img [ngClass]="{'gui-card-img': isImgEnabled()}"
-		 src="{{image}}"/>
 
 	<div [ngClass]="{'gui-card-content-block': isContentBlockEnabled()}">
 		<div

@@ -2,28 +2,45 @@
 
 @mixin gui-spinner() {
 	display: inline-block;
+	position: relative;
 	margin: 4px;
 	transform: rotate(-90deg);
-	animation: gui-rotate-div 2s infinite;
-}
 
-@mixin gui-circle() {
-	stroke: $gray;
-	fill: transparent;
-	animation: gui-spinner-shape 2s infinite;
-	animation-timing-function: ease-in-out;
+	circle {
+		fill: transparent;
+		stroke: $gray;
+	}
+
+	svg {
+		position: absolute;
+	}
+
+	.circle-inner {
+		animation: gui-spin-reverse 2s infinite linear forwards reverse;
+	}
+
+	.circle-outer {
+		animation: gui-spin 2s infinite linear forwards;
+	}
 }
 
 @mixin gui-animations {
-	@keyframes gui-spinner-shape {
+
+	@keyframes gui-spin {
+		from {
+			transform: rotate(-90deg)
+		}
 		to {
-			stroke-dashoffset: 0;
+			transform: rotate(270deg)
 		}
 	}
 
-	@keyframes gui-rotate-div {
+	@keyframes gui-spin-reverse {
+		from {
+			transform: rotate(-90deg) scale(0.8);
+		}
 		to {
-			transform: rotate(270deg)
+			transform: rotate(270deg) scale(0.8);
 		}
 	}
 }
