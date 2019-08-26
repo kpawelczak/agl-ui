@@ -1,11 +1,14 @@
-<h1>FABRIC PLAYGROUND</h1>
-
-Theme:
-<gui-select [options]="['Fabric', 'Material', 'Dark']" [selected]="'Fabric'" [placeholder]="'Change theme'"
-			(optionChanged)="changeTheme($event)">
-</gui-select>
+<div class="header">
+	<h1>FABRIC UI</h1>
+	<a gui-button [link]="true" href="https://github.com/kpawelczak/generic-ui">Github</a>
+</div>
 
 <article>
+
+	Theme:
+	<gui-select [options]="['Fabric', 'Material', 'Dark']" [selected]="'Fabric'" [placeholder]="'Change theme'"
+				(optionChanged)="changeTheme($event)">
+	</gui-select>
 
 	<h2>Buttons</h2>
 

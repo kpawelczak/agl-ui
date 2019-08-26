@@ -1,4 +1,14 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, EventEmitter, ElementRef, Renderer2, OnChanges } from '@angular/core';
+import {
+	ChangeDetectionStrategy,
+	Component,
+	ElementRef,
+	EventEmitter,
+	Input,
+	OnChanges,
+	Output,
+	Renderer2,
+	ViewEncapsulation
+} from '@angular/core';
 
 @Component({
 	selector: 'gui-radio-button',

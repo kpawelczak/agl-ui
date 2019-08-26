@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// import { ResizeDetector } from 'util/fabric/ui/behaviour/resize-detector/resize.detector';
 import { FabricBadgeModule } from 'util/fabric/ui/buttons-indicators/badge/fabric-badge.module';
 import { FabricButtonModule } from 'util/fabric/ui/buttons-indicators/button/fabric-button.module';
 import { FabricButtonGroupModule } from 'util/fabric/ui/buttons-indicators/button-group/fabric-button-group.module';
 import { FabricCardModule } from 'util/fabric/ui/layout/card/fabric-card.module';
 import { FabricCheckboxModule } from 'util/fabric/ui/form/checkbox/fabric-checkbox.module';
 import { FabricChipModule } from 'util/fabric/ui/buttons-indicators/chip/fabric-chip.module';
-import { FabricDropdownModule} from 'util/fabric/ui/form/modals/dropdown/fabric-dropdown.module';
+import { FabricDropdownModule } from 'util/fabric/ui/form/modals/dropdown/fabric-dropdown.module';
 import { FabricProgressBarModule } from 'util/fabric/ui/progress-bar/fabric-progress-bar.module';
 import { FabricProgressSpinnerModule } from 'util/fabric/ui/spinners/progress-spinner/fabric-progress-spinner.module';
 import { FabricRadioButtonModule } from 'util/fabric/ui/form/radio-button/fabric-radio-button.module';
@@ -48,9 +47,6 @@ const modules = [
 	],
 	exports: [
 		...modules
-	],
-	providers: [
-		// ResizeDetector
 	]
 })
 export class FabricModule {

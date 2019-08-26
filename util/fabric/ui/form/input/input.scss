@@ -32,7 +32,8 @@ $padding-horizontal: $grid;
 		color: $disabled;
 		cursor: default;
 		pointer-events: none;
-		&::placeholder{
+
+		&::placeholder {
 			color: $disabled;
 		}
 	}

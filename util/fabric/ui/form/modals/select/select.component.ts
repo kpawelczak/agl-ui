@@ -182,7 +182,7 @@ export class FabricSelectComponent implements OnChanges {
 			this.removeClass('gui-options-opened');
 		}
 
-		if(!optionsElHasOpenClass) {
+		if (!optionsElHasOpenClass) {
 			this.initAnimationDisabled = true;
 		}
 	}

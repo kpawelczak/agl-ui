@@ -1,40 +1,67 @@
 ul {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li {
-  padding: 4px;
-  list-style-type: none;
+	padding: 4px;
+	list-style-type: none;
+}
+
+article {
+	padding: 40px;
+}
+
+.header {
+	display: block;
+	background: #042f4b;
+	color: #fcfcfc;
+	padding: 16px;
+
+	h1 {
+		margin: 0;
+	}
+
+	a {
+		transition: color 0.2s;
+		text-decoration: none;
+		color: #fcfcfc;
+		padding: 2px;
+
+		&:hover {
+			color: darken(#fcfcfc, 40);
+		}
+	}
+
 }
 
 .tab-code {
-  color: #8e8e8e;
+	color: #8e8e8e;
 
-  p {
-    display: inline-block;
-    padding: 0;
-    margin: 0
-  }
+	p {
+		display: inline-block;
+		padding: 0;
+		margin: 0
+	}
 
-  .tab-code-input {
-    color: #ba68c8;
-    margin-left: 4px;
-  }
+	.tab-code-input {
+		color: #ba68c8;
+		margin-left: 4px;
+	}
 
-  .tab-code-input-value {
-    color: #39796b;
-  }
+	.tab-code-input-value {
+		color: #39796b;
+	}
 
-  .tab-code-html-content {
-    color: #0097A7;
-  }
+	.tab-code-html-content {
+		color: #0097A7;
+	}
 
-  li {
-    padding: 0 0 2px 0;
-  }
+	li {
+		padding: 0 0 2px 0;
+	}
 
-  .tab-code-item {
-    padding-left: 8px;
-  }
+	.tab-code-item {
+		padding-left: 8px;
+	}
 }

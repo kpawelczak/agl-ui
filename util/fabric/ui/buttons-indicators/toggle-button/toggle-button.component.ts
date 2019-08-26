@@ -69,7 +69,9 @@ export class FabricToggleButtonComponent extends Indicator {
 
 		if (e.target.disabled) {
 			e.stopPropagation();
-		} else this.toggle();
+		} else {
+			this.toggle();
+		}
 	}
 
 	toggle() {

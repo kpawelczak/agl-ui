@@ -4,50 +4,50 @@ import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mo
 import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
 
 @Component({
-  selector: 'app-component',
-  templateUrl: `app.component.html`,
-  styleUrls: ['style.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+	selector: 'app-component',
+	templateUrl: `app.component.html`,
+	styleUrls: ['style.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
 
-  spinnerMode: SpinnerMode = SpinnerMode.Spin;
-  placementRight: Placement = Placement.Right;
-  placementLeft: Placement = Placement.Left;
+	spinnerMode: SpinnerMode = SpinnerMode.Spin;
+	placementRight: Placement = Placement.Right;
+	placementLeft: Placement = Placement.Left;
 
-  constructor(private renderer: Renderer2,
-              private el: ElementRef) {
-  }
+	constructor(private renderer: Renderer2,
+				private el: ElementRef) {
+	}
 
-  changeTheme(theme: string): void {
+	changeTheme(theme: string): void {
 
-    switch (theme) {
+		switch (theme) {
 
-      case 'Material':
+			case 'Material':
 
-        this.setTheme('gui-material');
-        break;
+				this.setTheme('gui-material');
+				break;
 
-      case 'Dark':
+			case 'Dark':
 
-        this.setTheme('gui-dark');
-        this.renderer.addClass(document.body, 'gui-dark');
-        break;
+				this.setTheme('gui-dark');
+				this.renderer.addClass(document.body, 'gui-dark');
+				break;
 
-      default:
-        this.removeThemes();
-        break;
-    }
-  }
+			default:
+				this.removeThemes();
+				break;
+		}
+	}
 
-  private setTheme(name: string): void {
-    this.removeThemes();
-    this.renderer.addClass(this.el.nativeElement, name);
-  }
+	private setTheme(name: string): void {
+		this.removeThemes();
+		this.renderer.addClass(this.el.nativeElement, name);
+	}
 
-  private removeThemes(): void {
-    this.renderer.removeClass(this.el.nativeElement, 'gui-material');
-    this.renderer.removeClass(this.el.nativeElement, 'gui-dark');
-    this.renderer.removeClass(document.body, 'gui-dark');
-  }
+	private removeThemes(): void {
+		this.renderer.removeClass(this.el.nativeElement, 'gui-material');
+		this.renderer.removeClass(this.el.nativeElement, 'gui-dark');
+		this.renderer.removeClass(document.body, 'gui-dark');
+	}
 }

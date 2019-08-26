@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, ElementRef, Renderer2, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, SimpleChanges, ViewEncapsulation } from '@angular/core';
 
 import { Indicator } from 'util/fabric/ui/buttons-indicators/indicator';
 

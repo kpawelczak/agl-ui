@@ -1,4 +1,14 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges, ViewEncapsulation } from '@angular/core';
+import {
+	ChangeDetectionStrategy,
+	Component,
+	ElementRef,
+	Input,
+	OnChanges,
+	OnInit,
+	Renderer2,
+	SimpleChanges,
+	ViewEncapsulation
+} from '@angular/core';
 
 import { AbstractSpinner } from 'util/fabric/ui/spinners/abstract-spinner';
 import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mode';
