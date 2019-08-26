@@ -2,383 +2,470 @@
 
 Theme:
 <gui-select [options]="['Fabric', 'Material', 'Dark']" [selected]="'Fabric'" [placeholder]="'Change theme'"
-            (optionChanged)="changeTheme($event)">
+			(optionChanged)="changeTheme($event)">
 </gui-select>
 
 <article>
 
-  <h2>Buttons</h2>
-  <section>
-    <ul>
-      <li>
-        <button gui-button>Basic</button>
-        <button gui-button>Basic</button>
-        <button gui-button disabled>Disabled</button>
-        <button gui-button [link]="true">Link</button>
-      </li>
-      <li>
-        <button gui-button [primary]="true">Primary</button>
-        <button gui-button [primary]="true">Primary</button>
-        <button gui-button disabled [primary]="true">Disabled</button>
-      </li>
-      <li>
-        <button gui-button [secondary]="true">Secondary</button>
-        <button gui-button [secondary]="true">Secondary</button>
-        <button gui-button disabled [secondary]="true">Disabled</button>
-      </li>
-    </ul>
-  </section>
-  <h2>Outline Buttons</h2>
-  <section>
-    <ul>
-      <li>
-        <button gui-button [outline]="true">Basic</button>
-        <button gui-button [primary]="true" [outline]="true">Primary</button>
-        <button gui-button [secondary]="true" [outline]="true">Secondary</button>
-      </li>
-      <li>
-        <button gui-button disabled [outline]="true">Disabled</button>
-        <button gui-button disabled [primary]="true" [outline]="true">Disabled</button>
-        <button gui-button disabled [secondary]="true" [outline]="true">Disabled</button>
-      </li>
-    </ul>
-  </section>
-  <h2>Chips</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-chip>Basic</gui-chip>
-        <gui-chip [primary]="true">Primary</gui-chip>
-        <gui-chip [secondary]="true">Secondary</gui-chip>
-      </li>
-    </ul>
-  </section>
-  <h2>Outline Chips</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-chip [outline]="true">Basic</gui-chip>
-        <gui-chip [primary]="true" [outline]="true">Primary</gui-chip>
-        <gui-chip [secondary]="true" [outline]="true">Secondary</gui-chip>
-      </li>
-    </ul>
-  </section>
-  <h2>Badges</h2>
-  <section>
-    <ul>
-      <li>
-        <button gui-button [outline]="true">Basic</button>
-        <gui-badge>23</gui-badge>
-      </li>
-      <li>
-        <button gui-button [primary]="true" [outline]="true">Primary</button>
-        <gui-badge [primary]="true">23</gui-badge>
-      </li>
-      <li>
-        <button gui-button [secondary]="true" [outline]="true">Secondary</button>
-        <gui-badge [secondary]="true">23</gui-badge>
-      </li>
-    </ul>
-  </section>
-  <h2>Outline Badges</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-chip>Basic</gui-chip>
-        <gui-badge [outline]="true">34</gui-badge>
-      </li>
-      <li>
-        <gui-chip [primary]="true">Primary</gui-chip>
-        <gui-badge [primary]="true" [outline]="true">34</gui-badge>
-      </li>
-      <li>
-        <gui-chip [secondary]="true">Secondary</gui-chip>
-        <gui-badge [secondary]="true" [outline]="true">34</gui-badge>
-      </li>
-    </ul>
-  </section>
-  <h2>Button group</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-button-group>
-          <button gui-button>Prev</button>
-          <button gui-button>Stop</button>
-          <button gui-button>Next</button>
-        </gui-button-group>
-      </li>
-    </ul>
-  </section>
-  <h2>Toggle buttons</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-button-toggle>Basic</gui-button-toggle>
-        <gui-button-toggle [primary]="true">Primary</gui-button-toggle>
-        <gui-button-toggle [secondary]="true">Secondary</gui-button-toggle>
-        <gui-button-toggle [disabled]="true">Disabled</gui-button-toggle>
-      </li>
-      <li>
-        <gui-button-toggle [outline]="true">Basic</gui-button-toggle>
-        <gui-button-toggle [primary]="true" [outline]="true">Primary</gui-button-toggle>
-        <gui-button-toggle [secondary]="true" [outline]="true">Secondary</gui-button-toggle>
-        <gui-button-toggle [disabled]="true" [outline]="true">Disabled</gui-button-toggle>
-      </li>
-      <li>
-        <gui-button-group>
-          <gui-button-toggle [primary]="true">Like</gui-button-toggle>
-          <gui-button-toggle>Follow</gui-button-toggle>
-          <gui-button-toggle [secondary]="true" [checked]="true">Subscribe</gui-button-toggle>
-        </gui-button-group>
-      </li>
-    </ul>
-  </section>
-  <h2>Toggle button group</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-toggle-button-group>
-          <gui-button-toggle [checked]="true">Standard</gui-button-toggle>
-          <gui-button-toggle>Advanced</gui-button-toggle>
-          <gui-button-toggle>Expert</gui-button-toggle>
-        </gui-toggle-button-group>
-      </li>
-    </ul>
-  </section>
-  <h2>Checkboxes</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-checkbox [checked]="true">Checkbox</gui-checkbox>
-      </li>
-      <li>
-        <gui-checkbox [disabled]="true">Disabled</gui-checkbox>
-      </li>
-    </ul>
-  </section>
-  <h2>Radio buttons</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-radio-button>Radio button</gui-radio-button>
-      </li>
-      <li>
-        <gui-radio-button [disabled]="true">Disabled</gui-radio-button>
-      </li>
-    </ul>
-  </section>
-  <h2>Radio button group</h2>
-  <section>
-    <ul>
-      <li>
-        <p>Who is your favourite basketball player?</p>
-        <gui-radio-group>
-          <gui-radio-button [name]="'same'" [checked]="true">Westbrook</gui-radio-button>
-          <gui-radio-button [name]="'same'">Durant</gui-radio-button>
-          <gui-radio-button [name]="'same'">Lebron</gui-radio-button>
-          <gui-radio-button [name]="'same'">Kobe</gui-radio-button>
-        </gui-radio-group>
-      </li>
-    </ul>
-  </section>
-  <h2>Progress bar</h2>
-  <section>
-    <ul>
-      <li style='width:50%'>
-        <gui-progress-bar [width]="500"></gui-progress-bar>
-        <gui-progress-bar [height]="25" [textTop]="'15%'" [progress]="10" style='color:azure'>10%
-        </gui-progress-bar>
-        <gui-progress-bar [progress]="25" [primary]="true">25%</gui-progress-bar>
-        <gui-progress-bar [progress]="50" [secondary]="true">50%</gui-progress-bar>
-        <gui-progress-bar [progress]="75" [color]="'limegreen'" [textAlign]="'left'">75%</gui-progress-bar>
-      </li>
-    </ul>
-  </section>
-  <h2>Spinner</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-spinner></gui-spinner>
-        <gui-spinner [primary]="true"></gui-spinner>
-        <gui-spinner [secondary]="true"></gui-spinner>
-        <gui-spinner [color]="'DarkTurquoise'"></gui-spinner>
-      </li>
-      <li>
-        <gui-spinner [width]="40"></gui-spinner>
-        <gui-spinner [width]="25" [primary]="true"></gui-spinner>
-        <gui-spinner [width]="15" [secondary]="true"></gui-spinner>
-        <gui-spinner [width]="1" [color]="'DarkTurquoise'"></gui-spinner>
-      </li>
-      <li>
-        <gui-spinner [diameter]="150" [primary]="true"></gui-spinner>
-        <gui-spinner [diameter]="125" [color]="'brown'"></gui-spinner>
-        <gui-spinner [diameter]="100" [color]="'pink'"></gui-spinner>
-        <gui-spinner [diameter]="75" [color]="'gold'"></gui-spinner>
-      </li>
-    </ul>
-  </section>
-  <h2>Progress Spinner</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-progress-spinner [value]="75"></gui-progress-spinner>
-        <gui-progress-spinner [value]="90" [color]="'pink'"></gui-progress-spinner>
-        <gui-progress-spinner [width]="15" [value]="50" [diameter]="150" [secondary]="true">
-        </gui-progress-spinner>
-        <gui-progress-spinner [mode]="spinnerMode" [value]="30" [diameter]="150" [width]="10" [primary]="true">
-        </gui-progress-spinner>
-      </li>
-    </ul>
-  </section>
-  <h2>Select</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-select
-          [options]="['option 1', 'option 2','option 3']"
-          [selected]="'option 2'">
-        </gui-select>
-      </li>
-      <li>
-        <gui-select [placeholder]="'Example placeholder text'" [width]="200"
-                    [options]="['example option 1', 'example option 2']"></gui-select>
-      </li>
-      <li>
-        <gui-select [disabled]="true" [placeholder]="'Disabled'" [options]="['option 1', 'option 2','option 3']"></gui-select>
-      </li>
-    </ul>
-  </section>
-  <h2>Dropdown</h2>
-  <section>
-    <gui-dropdown>
-      <gui-dropdown-item>item one</gui-dropdown-item>
-      <gui-dropdown-item>item two</gui-dropdown-item>
-    </gui-dropdown>
-    <gui-dropdown
-      [placement]="placementRight"
-      [dropdownText]="'Open right'">
-      <gui-dropdown-item>item one</gui-dropdown-item>
-      <gui-dropdown-item>item two</gui-dropdown-item>
-    </gui-dropdown>
-    <gui-dropdown
-      [placement]="placementLeft"
-      [dropdownText]="'Open left'">
-      <gui-dropdown-item>item one</gui-dropdown-item>
-      <gui-dropdown-item>item two</gui-dropdown-item>
-    </gui-dropdown>
-  </section>
-  <h2>Input</h2>
-  <section>
-    <ul>
-      <li>
-        <input gui-input type="text" placeholder="Type here...">
-      </li>
-      <li>
-        <input gui-input disabled placeholder="Disabled">
-      </li>
-    </ul>
-  </section>
-  <h2>Cards</h2>
-  <section>
-    <ul>
-      <li>
-        <gui-card
-          [title]="'Card Title'"
-          [image]="'https://via.placeholder.com/200x100'"
-          [contentBlock]="['Example content block item one', 'Example content block item two']">
-          <div style="margin-bottom: 8px">
-            Some example description to showcase content of gui-card component
-          </div>
-          <button gui-button>Click me!</button>
-        </gui-card>
-      </li>
-    </ul>
-    <br>
-    <h4 style='margin:0'>Content block</h4>
-    <ul>
-      <li>
-        <gui-card [contentBlock]="['Example item one', 'Example item two','Example item three']"></gui-card>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <gui-card
-          [title]="'Patas Monkey'"
-          [image]="'https://images.freeimages.com/images/large-previews/a05/patas-monkey-1309205.jpg'">
-          <div style="margin-bottom: 8px">
-            Ut sem viverra aliquet eget sit amet. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Elit sed vulputate mi sit amet mauris. Suspendisse sed nisi lacus sed. Diam volutpat commodo sed egestas egestas fringilla phasellus. Nunc pulvinar sapien et ligula ullamcorper.
-          </div>
-          <button gui-button [primary]="true">Add</button>
-        </gui-card>
-      </li>
-    </ul>
-    <br>
-  </section>
-  <section>
-    <h2>Nav Tab</h2>
-    <div style="width: 550px">
-      <gui-tab [menu]="['Text', 'Code', 'Nba Draft 2019']" [active]="'Text'">
+	<h2>Buttons</h2>
 
-        <gui-tab-item [tab]="'Text'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-        </gui-tab-item>
+	<section>
 
-        <gui-tab-item [tab]="'Code'">
-          <ul class="tab-code">
-            <li>
-              &lt;gui-tab
-              <p class="tab-code-input">[menu]</p>
-              =
-              <p class="tab-code-input-value">"['Example', 'Code', 'Third']"</p>
-              <p class="tab-code-input">[active]</p>
-              =
-              <p class="tab-code-input-value">"'Text'"</p>&gt;
-            </li>
-            <li class="tab-code-item">
-              &lt;gui-tab-item
-              <p class="tab-code-input">[tab]</p>
-              =
-              <p class="tab-code-input-value">"'Text'"</p>>
-              <p class="tab-code-html-content">Lorem ipsum...</p>
-              &lt;/gui-tab-item&gt;
-            </li>
-            <li class="tab-code-item">&lt;gui-tab-item <p class="tab-code-input">[tab]</p>
-              =
-              <p class="tab-code-input-value">"'Code'"</p>>
-              <p class="tab-code-html-content">Code...</p>
-              &lt;/gui-tab-item&gt;
-            </li>
-            <li class="tab-code-item">
-              &lt;gui-tab-item
-              <p class="tab-code-input">[tab]</p>
-              =
-              <p class="tab-code-input-value">"'Nba Draft 2019'"</p>>
-              <p class="tab-code-html-content">Nba draft 2019...</p>
-              &lt;/gui-tab-item&gt;
-            </li>
-            <li>&lt;/gui-tab&gt;</li>
-          </ul>
-        </gui-tab-item>
+		<ul>
 
-        <gui-tab-item [tab]="'Nba Draft 2019'">
-          <h3>NBA 2019 DRAFT PICKS</h3>
-          <ul>
-            <li>1. Zion Williamson - New Orleans Pelicans</li>
-            <li>2. Ja Morant - Memphis Grizzlies</li>
-            <li>3. R. J. Barrett - New York Knicks</li>
-            <li>4. De'Andre Hunter - Los Angeles Lakers (traded to Atlanta)</li>
-            <li>5. Darius Garland - Cleveland Cavaliers</li>
-            <li>6. Jarret Culver - Phoenix Suns (traded to Minnesota)</li>
-            <li>7. Coby White - Chicago Bulls</li>
-            <li>8. Jaxson Hayes - Atlanta Hawks (traded to New Orleans)</li>
-            <li>9. Rui Hachimura - Washington Wizard</li>
-            <li>10. Cam Reddish - Atlanta Hawks (acquired from Dallas)</li>
-          </ul>
-        </gui-tab-item>
-      </gui-tab>
-    </div>
-  </section>
-  <section style='margin-bottom: 150px'></section>
+			<li>
+				<button gui-button>Basic</button>
+				<button gui-button>Basic</button>
+				<button gui-button disabled>Disabled</button>
+				<button gui-button [link]="true">Link</button>
+			</li>
+
+			<li>
+				<button gui-button [primary]="true">Primary</button>
+				<button gui-button [primary]="true">Primary</button>
+				<button gui-button disabled [primary]="true">Disabled</button>
+			</li>
+
+			<li>
+				<button gui-button [secondary]="true">Secondary</button>
+				<button gui-button [secondary]="true">Secondary</button>
+				<button gui-button disabled [secondary]="true">Disabled</button>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Outline Buttons</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<button gui-button [outline]="true">Basic</button>
+				<button gui-button [primary]="true" [outline]="true">Primary</button>
+				<button gui-button [secondary]="true" [outline]="true">Secondary</button>
+			</li>
+			<li>
+				<button gui-button disabled [outline]="true">Disabled</button>
+				<button gui-button disabled [primary]="true" [outline]="true">Disabled</button>
+				<button gui-button disabled [secondary]="true" [outline]="true">Disabled</button>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Chips</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-chip>Basic</gui-chip>
+				<gui-chip [primary]="true">Primary</gui-chip>
+				<gui-chip [secondary]="true">Secondary</gui-chip>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Outline Chips</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-chip [outline]="true">Basic</gui-chip>
+				<gui-chip [primary]="true" [outline]="true">Primary</gui-chip>
+				<gui-chip [secondary]="true" [outline]="true">Secondary</gui-chip>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Badges</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<button gui-button [outline]="true">Basic</button>
+				<gui-badge>23</gui-badge>
+			</li>
+			<li>
+				<button gui-button [primary]="true" [outline]="true">Primary</button>
+				<gui-badge [primary]="true">23</gui-badge>
+			</li>
+			<li>
+				<button gui-button [secondary]="true" [outline]="true">Secondary</button>
+				<gui-badge [secondary]="true">23</gui-badge>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Outline Badges</h2>
+
+	<section>
+		<ul>
+			<li>
+				<gui-chip>Basic</gui-chip>
+				<gui-badge [outline]="true">34</gui-badge>
+			</li>
+			<li>
+				<gui-chip [primary]="true">Primary</gui-chip>
+				<gui-badge [primary]="true" [outline]="true">34</gui-badge>
+			</li>
+			<li>
+				<gui-chip [secondary]="true">Secondary</gui-chip>
+				<gui-badge [secondary]="true" [outline]="true">34</gui-badge>
+			</li>
+		</ul>
+	</section>
+
+	<h2>Button group</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-button-group>
+					<button gui-button>Prev</button>
+					<button gui-button>Stop</button>
+					<button gui-button>Next</button>
+				</gui-button-group>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Toggle buttons</h2>
+
+	<section>
+
+		<ul>
+
+			<li>
+				<gui-button-toggle>Basic</gui-button-toggle>
+				<gui-button-toggle [primary]="true">Primary</gui-button-toggle>
+				<gui-button-toggle [secondary]="true">Secondary</gui-button-toggle>
+				<gui-button-toggle [disabled]="true">Disabled</gui-button-toggle>
+			</li>
+
+			<li>
+				<gui-button-toggle [outline]="true">Basic</gui-button-toggle>
+				<gui-button-toggle [primary]="true" [outline]="true">Primary</gui-button-toggle>
+				<gui-button-toggle [secondary]="true" [outline]="true">Secondary</gui-button-toggle>
+				<gui-button-toggle [disabled]="true" [outline]="true">Disabled</gui-button-toggle>
+			</li>
+
+			<li>
+				<gui-button-group>
+					<gui-button-toggle [primary]="true">Like</gui-button-toggle>
+					<gui-button-toggle>Follow</gui-button-toggle>
+					<gui-button-toggle [secondary]="true" [checked]="true">Subscribe</gui-button-toggle>
+				</gui-button-group>
+			</li>
+
+		</ul>
+
+	</section>
+
+	<h2>Toggle button group</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-toggle-button-group>
+					<gui-button-toggle [checked]="true">Standard</gui-button-toggle>
+					<gui-button-toggle>Advanced</gui-button-toggle>
+					<gui-button-toggle>Expert</gui-button-toggle>
+				</gui-toggle-button-group>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Checkboxes</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-checkbox [checked]="true">Checkbox</gui-checkbox>
+			</li>
+			<li>
+				<gui-checkbox [disabled]="true">Disabled</gui-checkbox>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Radio buttons</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-radio-button>Radio button</gui-radio-button>
+			</li>
+			<li>
+				<gui-radio-button [disabled]="true">Disabled</gui-radio-button>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Radio button group</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<p>Who is your favourite basketball player?</p>
+				<gui-radio-group>
+					<gui-radio-button [name]="'same'" [checked]="true">Westbrook</gui-radio-button>
+					<gui-radio-button [name]="'same'">Durant</gui-radio-button>
+					<gui-radio-button [name]="'same'">Lebron</gui-radio-button>
+					<gui-radio-button [name]="'same'">Kobe</gui-radio-button>
+				</gui-radio-group>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Progress bar</h2>
+
+	<section>
+
+		<ul>
+			<li style='width:50%'>
+				<gui-progress-bar [width]="500"></gui-progress-bar>
+				<gui-progress-bar [height]="25" [textTop]="'15%'" [progress]="10" style='color:azure'>10%
+				</gui-progress-bar>
+				<gui-progress-bar [progress]="25" [primary]="true">25%</gui-progress-bar>
+				<gui-progress-bar [progress]="50" [secondary]="true">50%</gui-progress-bar>
+				<gui-progress-bar [progress]="75" [color]="'limegreen'" [textAlign]="'left'">75%</gui-progress-bar>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Spinner</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-spinner></gui-spinner>
+				<gui-spinner [primary]="true"></gui-spinner>
+				<gui-spinner [secondary]="true"></gui-spinner>
+				<gui-spinner [color]="'DarkTurquoise'"></gui-spinner>
+			</li>
+			<li>
+				<gui-spinner [width]="40"></gui-spinner>
+				<gui-spinner [width]="25" [primary]="true"></gui-spinner>
+				<gui-spinner [width]="15" [secondary]="true"></gui-spinner>
+				<gui-spinner [width]="1" [color]="'DarkTurquoise'"></gui-spinner>
+			</li>
+			<li>
+				<gui-spinner [diameter]="150" [primary]="true"></gui-spinner>
+				<gui-spinner [diameter]="125" [color]="'brown'"></gui-spinner>
+				<gui-spinner [diameter]="100" [color]="'pink'"></gui-spinner>
+				<gui-spinner [diameter]="75" [color]="'gold'"></gui-spinner>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Progress Spinner</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-progress-spinner [value]="75"></gui-progress-spinner>
+				<gui-progress-spinner [value]="90" [color]="'pink'"></gui-progress-spinner>
+				<gui-progress-spinner [width]="15" [value]="50" [diameter]="150" [secondary]="true">
+				</gui-progress-spinner>
+				<gui-progress-spinner [mode]="spinnerMode" [value]="30" [diameter]="150" [width]="10" [primary]="true">
+				</gui-progress-spinner>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Select</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<gui-select
+					[options]="['option 1', 'option 2','option 3']"
+					[selected]="'option 2'">
+				</gui-select>
+			</li>
+			<li>
+				<gui-select [placeholder]="'Example placeholder text'" [width]="200"
+							[options]="['example option 1', 'example option 2']"></gui-select>
+			</li>
+			<li>
+				<gui-select [disabled]="true" [placeholder]="'Disabled'" [options]="['option 1', 'option 2','option 3']"></gui-select>
+			</li>
+		</ul>
+
+	</section>
+
+	<h2>Dropdown</h2>
+
+	<section>
+
+		<gui-dropdown>
+			<gui-dropdown-item>item one</gui-dropdown-item>
+			<gui-dropdown-item>item two</gui-dropdown-item>
+		</gui-dropdown>
+
+		<gui-dropdown
+			[placement]="placementRight"
+			[dropdownText]="'Open right'">
+			<gui-dropdown-item>item one</gui-dropdown-item>
+			<gui-dropdown-item>item two</gui-dropdown-item>
+		</gui-dropdown>
+
+		<gui-dropdown
+			[placement]="placementLeft"
+			[dropdownText]="'Open left'">
+			<gui-dropdown-item>item one</gui-dropdown-item>
+			<gui-dropdown-item>item two</gui-dropdown-item>
+		</gui-dropdown>
+
+	</section>
+
+	<h2>Input</h2>
+
+	<section>
+
+		<ul>
+			<li>
+				<input gui-input type="text" placeholder="Type here...">
+			</li>
+			<li>
+				<input gui-input disabled placeholder="Disabled">
+			</li>
+		</ul>
+	</section>
+
+	<h2>Cards</h2>
+
+	<section>
+
+		<ul>
+			<li>
+
+				<gui-card
+					[title]="'Card Title'"
+					[image]="'https://via.placeholder.com/200x100'"
+					[contentBlock]="['Example content block item one', 'Example content block item two']">
+					<div style="margin-bottom: 8px">
+						Some example description to showcase content of gui-card component
+					</div>
+					<button gui-button>Click me!</button>
+				</gui-card>
+
+			</li>
+		</ul>
+		<br>
+		<ul>
+			<li>
+
+				<gui-card
+					[title]="'Patas Monkey'"
+					[image]="'https://images.freeimages.com/images/large-previews/a05/patas-monkey-1309205.jpg'">
+					<div style="margin-bottom: 8px">
+						Ut sem viverra aliquet eget sit amet. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Elit sed vulputate mi
+						sit amet
+						mauris. Suspendisse sed nisi lacus sed. Diam volutpat commodo sed egestas egestas fringilla phasellus. Nunc pulvinar sapien et ligula
+						ullamcorper.
+					</div>
+					<button gui-button [primary]="true">Add</button>
+				</gui-card>
+
+			</li>
+		</ul>
+		<br>
+	</section>
+
+	<h2>Nav Tab</h2>
+
+	<section>
+
+		<div style="width: 550px">
+
+			<gui-tab [menu]="['Text', 'Code', 'Nba Draft 2019']" [active]="'Text'">
+
+				<gui-tab-item [tab]="'Text'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+					irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum
+				</gui-tab-item>
+
+				<gui-tab-item [tab]="'Code'">
+					<ul class="tab-code">
+						<li>
+							&lt;gui-tab
+							<p class="tab-code-input">[menu]</p>
+							=
+							<p class="tab-code-input-value">"['Example', 'Code', 'Third']"</p>
+							<p class="tab-code-input">[active]</p>
+							=
+							<p class="tab-code-input-value">"'Text'"</p>&gt;
+						</li>
+						<li class="tab-code-item">
+							&lt;gui-tab-item
+							<p class="tab-code-input">[tab]</p>
+							=
+							<p class="tab-code-input-value">"'Text'"</p>>
+							<p class="tab-code-html-content">Lorem ipsum...</p>
+							&lt;/gui-tab-item&gt;
+						</li>
+						<li class="tab-code-item">&lt;gui-tab-item <p class="tab-code-input">[tab]</p>
+							=
+							<p class="tab-code-input-value">"'Code'"</p>>
+							<p class="tab-code-html-content">Code...</p>
+							&lt;/gui-tab-item&gt;
+						</li>
+						<li class="tab-code-item">
+							&lt;gui-tab-item
+							<p class="tab-code-input">[tab]</p>
+							=
+							<p class="tab-code-input-value">"'Nba Draft 2019'"</p>>
+							<p class="tab-code-html-content">Nba draft 2019...</p>
+							&lt;/gui-tab-item&gt;
+						</li>
+						<li>&lt;/gui-tab&gt;</li>
+					</ul>
+				</gui-tab-item>
+
+				<gui-tab-item [tab]="'Nba Draft 2019'">
+					<h3>NBA 2019 DRAFT PICKS</h3>
+					<ul>
+						<li>1. Zion Williamson - New Orleans Pelicans</li>
+						<li>2. Ja Morant - Memphis Grizzlies</li>
+						<li>3. R. J. Barrett - New York Knicks</li>
+						<li>4. De'Andre Hunter - Los Angeles Lakers (traded to Atlanta)</li>
+						<li>5. Darius Garland - Cleveland Cavaliers</li>
+						<li>6. Jarret Culver - Phoenix Suns (traded to Minnesota)</li>
+						<li>7. Coby White - Chicago Bulls</li>
+						<li>8. Jaxson Hayes - Atlanta Hawks (traded to New Orleans)</li>
+						<li>9. Rui Hachimura - Washington Wizard</li>
+						<li>10. Cam Reddish - Atlanta Hawks (acquired from Dallas)</li>
+					</ul>
+				</gui-tab-item>
+			</gui-tab>
+
+		</div>
+
+	</section>
+	<section style='margin-bottom: 150px'></section>
 </article>
