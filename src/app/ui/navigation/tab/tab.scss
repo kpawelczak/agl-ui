@@ -22,6 +22,11 @@ $padding: $grid $grid*2;
 
 	.gui-tab-menu-item {
 		position: relative;
+		border: {
+			style: solid;
+			width: $border-width;
+			color: transparent;
+		};
 		bottom: -1px;
 		cursor: pointer;
 		display: inline-block;
