@@ -49,5 +49,5 @@ const modules = [
 		...modules
 	]
 })
-export class SimpleUiModule {
+export class SimpleUIModule {
 }
