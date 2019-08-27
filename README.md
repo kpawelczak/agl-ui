@@ -1,4 +1,4 @@
-# Fabric-UI
+# Simple-UI
 
 **Introduction**
 
@@ -12,8 +12,8 @@ Simple UI elements with examples page.
 **How to start page with examples**
 
 1. Make sure you have required apps installed, see section _**Requirements**_.
-2. Clone or download Fabric-UI from [here](https://github.com/kpawelczak/fabric-ui).
-3. Open /fabric-ui directory in comand prompt.
+2. Clone or download Simple-UI from [here](https://github.com/kpawelczak/simple-ui).
+3. Open /simple-ui directory in comand prompt.
 4. Type in 
 <code>ng serve</code> 
 or 
