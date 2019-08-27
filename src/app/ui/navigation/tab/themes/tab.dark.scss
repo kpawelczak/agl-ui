@@ -11,12 +11,13 @@
 		}
 
 		.gui-tab-menu-item {
-			border-color: $border-color $border-color $basic-background $border-color;
+			border-color: transparent;
 		}
 
 		.gui-active {
 			&.gui-tab-menu-item {
 				background: $basic-background;
+				border-color: $border-color $border-color transparent $border-color;
 			}
 		}
 	}
