@@ -1,7 +1,12 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Renderer2 } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Renderer2 } from '@angular/core';
+
+import { HighlightService } from './prism/highlight.service';
 
 import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mode';
 import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
+
+import { buttonsCode } from './code-examples/buttons.code';
+import { navTabCode } from './code-examples/navtab.code';
 
 @Component({
 	selector: 'app-component',
@@ -9,14 +14,22 @@ import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
 	styleUrls: ['style.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
 	spinnerMode: SpinnerMode = SpinnerMode.Spin;
 	placementRight: Placement = Placement.Right;
 	placementLeft: Placement = Placement.Left;
 
-	constructor(private renderer: Renderer2,
+	buttonCode = buttonsCode;
+	navTabCode = navTabCode;
+
+	constructor(private highlightService: HighlightService,
+				private renderer: Renderer2,
 				private el: ElementRef) {
+	}
+
+	ngAfterViewInit() {
+		this.highlightService.highlightAll();
 	}
 
 	changeTheme(theme: string): void {

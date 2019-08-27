@@ -1,7 +1,4 @@
-<div class="header">
-	<h1>FABRIC UI</h1>
-	<a gui-button [link]="true" href="https://github.com/kpawelczak/generic-ui">Github</a>
-</div>
+<app-header></app-header>
 
 <article>
 
@@ -20,7 +17,7 @@
 				<button gui-button>Basic</button>
 				<button gui-button>Basic</button>
 				<button gui-button disabled>Disabled</button>
-				<button gui-button [link]="true">Link</button>
+				<a gui-button [link]="true">Link</a>
 			</li>
 
 			<li>
@@ -34,7 +31,12 @@
 				<button gui-button [secondary]="true">Secondary</button>
 				<button gui-button disabled [secondary]="true">Disabled</button>
 			</li>
+
 		</ul>
+
+<!--		<div class="code-example">-->
+<!--			<pre><code class="language-html">{{buttonCode}}</code></pre>-->
+<!--		</div>-->
 
 	</section>
 
@@ -397,7 +399,7 @@
 
 	<section>
 
-		<div style="width: 550px">
+		<div style="width: 650px">
 
 			<gui-tab [menu]="['Text', 'Code', 'Nba Draft 2019']" [active]="'Text'">
 
@@ -408,40 +410,7 @@
 				</gui-tab-item>
 
 				<gui-tab-item [tab]="'Code'">
-					<ul class="tab-code">
-						<li>
-							&lt;gui-tab
-							<p class="tab-code-input">[menu]</p>
-							=
-							<p class="tab-code-input-value">"['Example', 'Code', 'Third']"</p>
-							<p class="tab-code-input">[active]</p>
-							=
-							<p class="tab-code-input-value">"'Text'"</p>&gt;
-						</li>
-						<li class="tab-code-item">
-							&lt;gui-tab-item
-							<p class="tab-code-input">[tab]</p>
-							=
-							<p class="tab-code-input-value">"'Text'"</p>>
-							<p class="tab-code-html-content">Lorem ipsum...</p>
-							&lt;/gui-tab-item&gt;
-						</li>
-						<li class="tab-code-item">&lt;gui-tab-item <p class="tab-code-input">[tab]</p>
-							=
-							<p class="tab-code-input-value">"'Code'"</p>>
-							<p class="tab-code-html-content">Code...</p>
-							&lt;/gui-tab-item&gt;
-						</li>
-						<li class="tab-code-item">
-							&lt;gui-tab-item
-							<p class="tab-code-input">[tab]</p>
-							=
-							<p class="tab-code-input-value">"'Nba Draft 2019'"</p>>
-							<p class="tab-code-html-content">Nba draft 2019...</p>
-							&lt;/gui-tab-item&gt;
-						</li>
-						<li>&lt;/gui-tab&gt;</li>
-					</ul>
+					<pre><code class="language-html">{{navTabCode}}</code></pre>
 				</gui-tab-item>
 
 				<gui-tab-item [tab]="'Nba Draft 2019'">
