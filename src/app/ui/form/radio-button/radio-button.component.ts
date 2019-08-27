@@ -23,7 +23,7 @@ import {
 		'[class.gui-radio-button]': 'true'
 	}
 })
-export class FabricRadioButtonComponent implements OnChanges {
+export class RadioButtonComponent implements OnChanges {
 
 	@Input()
 	name: string;

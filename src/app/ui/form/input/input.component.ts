@@ -13,5 +13,5 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 		'[class.gui-input]': 'true'
 	}
 })
-export class FabricInputComponent {
+export class InputComponent {
 }

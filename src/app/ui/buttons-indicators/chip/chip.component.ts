@@ -15,7 +15,7 @@ import { Indicator } from 'src/app/ui/buttons-indicators/indicator';
 		'[class.gui-chip]': 'true'
 	}
 })
-export class FabricChipComponent extends Indicator {
+export class ChipComponent extends Indicator {
 
 	constructor(elementRef: ElementRef,
 				renderer: Renderer2) {

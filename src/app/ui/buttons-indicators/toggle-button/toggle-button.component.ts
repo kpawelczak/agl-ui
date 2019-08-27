@@ -28,7 +28,7 @@ import { ToggleButtonGroupService } from 'src/app/ui/buttons-indicators/toggle-b
 	}
 })
 
-export class FabricToggleButtonComponent extends Indicator {
+export class ToggleButtonComponent extends Indicator {
 
 	@Input()
 	checked: boolean = false;

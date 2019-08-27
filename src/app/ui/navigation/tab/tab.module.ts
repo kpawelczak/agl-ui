@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricTabComponent } from 'src/app/ui/navigation/tab/tab.component';
+import { TabComponent } from 'src/app/ui/navigation/tab/tab.component';
 import { TabItemComponent } from 'src/app/ui/navigation/tab/tab-item/tab-item.component';
 
 
@@ -10,13 +10,13 @@ import { TabItemComponent } from 'src/app/ui/navigation/tab/tab-item/tab-item.co
 		CommonModule
 	],
 	declarations: [
-		FabricTabComponent,
+		TabComponent,
 		TabItemComponent
 	],
 	exports: [
-		FabricTabComponent,
+		TabComponent,
 		TabItemComponent
 	]
 })
-export class FabricTabModule {
+export class TabModule {
 }

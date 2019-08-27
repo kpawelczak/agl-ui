@@ -13,5 +13,5 @@ import { ToggleButtonGroupService } from 'src/app/ui/buttons-indicators/toggle-b
 	},
 	providers: [ToggleButtonGroupService]
 })
-export class FabricToggleButtonGroupComponent {
+export class ToggleButtonGroupComponent {
 }

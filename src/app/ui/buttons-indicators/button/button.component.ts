@@ -15,7 +15,7 @@ import { Indicator } from 'src/app/ui/buttons-indicators/indicator';
 		'[class.gui-button]': 'true'
 	}
 })
-export class FabricButtonComponent extends Indicator {
+export class ButtonComponent extends Indicator {
 
 	@Input()
 	link: boolean = false;

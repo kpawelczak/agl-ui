@@ -15,7 +15,7 @@ import { Indicator } from 'src/app/ui/buttons-indicators/indicator';
 		'[class.gui-badge]': 'true'
 	}
 })
-export class FabricBadgeComponent extends Indicator {
+export class BadgeComponent extends Indicator {
 
 	constructor(elementRef: ElementRef,
 				renderer: Renderer2) {

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricChipComponent } from 'src/app/ui/buttons-indicators/chip/chip.component';
+import { RadioGroupComponent } from 'src/app/ui/form/radio-group/radio-group.component';
 
 
 @NgModule({
@@ -9,11 +9,11 @@ import { FabricChipComponent } from 'src/app/ui/buttons-indicators/chip/chip.com
 		CommonModule
 	],
 	declarations: [
-		FabricChipComponent
+		RadioGroupComponent
 	],
 	exports: [
-		FabricChipComponent
+		RadioGroupComponent
 	]
 })
-export class FabricChipModule {
+export class RadioGroupModule {
 }

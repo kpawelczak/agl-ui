@@ -27,7 +27,7 @@ import {
 		'[class.gui-select]': 'true'
 	}
 })
-export class FabricSelectComponent implements OnChanges {
+export class SelectComponent implements OnChanges {
 
 	@ViewChild('optionlist')
 	optionListRef: ElementRef;

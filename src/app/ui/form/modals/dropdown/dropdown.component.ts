@@ -32,7 +32,7 @@ import { Geometry } from 'src/app/ui/form/modals/geometry';
 	},
 	providers: [GeometryService]
 })
-export class FabricDropdownComponent implements OnChanges, OnInit {
+export class DropdownComponent implements OnChanges, OnInit {
 
 	@ViewChild('dropdownMenu')
 	dropdownMenuRef: ElementRef;

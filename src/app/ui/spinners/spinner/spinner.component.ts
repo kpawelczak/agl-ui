@@ -11,7 +11,7 @@ import { AbstractSpinner } from 'src/app/ui/spinners/abstract-spinner';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None
 })
-export class FabricSpinnerComponent extends AbstractSpinner implements OnInit {
+export class SpinnerComponent extends AbstractSpinner implements OnInit {
 
 	@Input()
 	color: string;

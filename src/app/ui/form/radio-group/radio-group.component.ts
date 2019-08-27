@@ -10,5 +10,5 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 		'[class.gui-radio-group]': 'true'
 	}
 })
-export class FabricRadioGroupComponent {
+export class RadioGroupComponent {
 }

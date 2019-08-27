@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricCardComponent } from 'src/app/ui/layout/card/card.component';
+import { BadgeComponent } from 'src/app/ui/buttons-indicators/badge/badge.componet';
 
 
 @NgModule({
@@ -9,11 +9,11 @@ import { FabricCardComponent } from 'src/app/ui/layout/card/card.component';
 		CommonModule
 	],
 	declarations: [
-		FabricCardComponent
+		BadgeComponent
 	],
 	exports: [
-		FabricCardComponent
+		BadgeComponent
 	]
 })
-export class FabricCardModule {
+export class BadgeModule {
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricSpinnerComponent } from 'src/app/ui/spinners/spinner/spinner.component';
+import { ProgressBarComponent } from 'src/app/ui/progress-bar/progress-bar.component';
 
 
 @NgModule({
@@ -9,11 +9,12 @@ import { FabricSpinnerComponent } from 'src/app/ui/spinners/spinner/spinner.comp
 		CommonModule
 	],
 	declarations: [
-		FabricSpinnerComponent
+		ProgressBarComponent
 	],
 	exports: [
-		FabricSpinnerComponent
+		ProgressBarComponent
 	]
 })
-export class FabricSpinnerModule {
+export class ProgressBarModule {
+
 }

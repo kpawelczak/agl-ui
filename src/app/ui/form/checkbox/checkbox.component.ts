@@ -24,7 +24,7 @@ import {
 		'[class.gui-checkbox]': 'true'
 	}
 })
-export class FabricCheckboxComponent implements OnChanges {
+export class CheckboxComponent implements OnChanges {
 
 	@Input()
 	name: string;

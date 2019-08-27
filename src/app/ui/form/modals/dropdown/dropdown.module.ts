@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricDropdownComponent } from 'src/app/ui/form/modals/dropdown/dropdown.component';
+import { DropdownComponent } from 'src/app/ui/form/modals/dropdown/dropdown.component';
 import { DropdownItemComponent } from 'src/app/ui/form/modals/dropdown/dropdown-items/dropdown-item.component';
 
 
@@ -10,13 +10,13 @@ import { DropdownItemComponent } from 'src/app/ui/form/modals/dropdown/dropdown-
 		CommonModule
 	],
 	declarations: [
-		FabricDropdownComponent,
+		DropdownComponent,
 		DropdownItemComponent
 	],
 	exports: [
-		FabricDropdownComponent,
+		DropdownComponent,
 		DropdownItemComponent
 	]
 })
-export class FabricDropdownModule {
+export class DropdownModule {
 }

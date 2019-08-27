@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricSelectComponent } from 'src/app/ui/form/modals/select/select.component';
+import { InputComponent } from 'src/app/ui/form/input/input.component';
 
 
 @NgModule({
@@ -9,11 +9,11 @@ import { FabricSelectComponent } from 'src/app/ui/form/modals/select/select.comp
 		CommonModule
 	],
 	declarations: [
-		FabricSelectComponent
+		InputComponent
 	],
 	exports: [
-		FabricSelectComponent
+		InputComponent
 	]
 })
-export class FabricSelectModule {
+export class InputModule {
 }

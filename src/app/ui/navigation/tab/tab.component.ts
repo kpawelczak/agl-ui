@@ -22,7 +22,7 @@ import {
 		'[class.gui-tab]': 'true'
 	}
 })
-export class FabricTabComponent implements AfterViewInit {
+export class TabComponent implements AfterViewInit {
 
 	@ViewChild('tab')
 	navTabRef: ElementRef;

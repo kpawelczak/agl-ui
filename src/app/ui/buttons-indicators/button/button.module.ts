@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FabricCheckboxComponent } from 'src/app/ui/form/checkbox/checkbox.component';
+import { ButtonComponent } from './button.component';
 
 
 @NgModule({
@@ -9,11 +9,11 @@ import { FabricCheckboxComponent } from 'src/app/ui/form/checkbox/checkbox.compo
 		CommonModule
 	],
 	declarations: [
-		FabricCheckboxComponent
+		ButtonComponent
 	],
 	exports: [
-		FabricCheckboxComponent
+		ButtonComponent
 	]
 })
-export class FabricCheckboxModule {
+export class ButtonModule {
 }

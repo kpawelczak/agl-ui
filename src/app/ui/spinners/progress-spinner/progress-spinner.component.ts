@@ -23,7 +23,7 @@ import { SpinnerMode } from 'src/app/ui/spinners/progress-spinner/spinner-mode';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None
 })
-export class FabricProgressSpinnerComponent extends AbstractSpinner implements OnChanges, OnInit {
+export class ProgressSpinnerComponent extends AbstractSpinner implements OnChanges, OnInit {
 
 	@Input()
 	value: number = 0;

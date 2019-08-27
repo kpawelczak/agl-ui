@@ -13,7 +13,7 @@ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@a
 		'[class.gui-card]': 'true'
 	}
 })
-export class FabricCardComponent {
+export class CardComponent {
 
 	@Input()
 	title: string;

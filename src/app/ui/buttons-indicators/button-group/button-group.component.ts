@@ -10,5 +10,5 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 		'[class.gui-button-group]': 'true'
 	}
 })
-export class FabricButtonGroupComponent {
+export class ButtonGroupComponent {
 }

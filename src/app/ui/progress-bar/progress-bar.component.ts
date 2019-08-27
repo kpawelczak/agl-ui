@@ -13,7 +13,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, Simpl
 		'[class.gui-progress]': 'true'
 	}
 })
-export class FabricProgressBarComponent {
+export class ProgressBarComponent {
 
 	@Input()
 	progress: number;
