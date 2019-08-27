@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+@import '../mixins-spinner.scss';
+
+@include gui-animations();
+
+.gui-spinner {
+	@include gui-spinner();
+
+	.gui-primary &.gui-spinner circle {
+		stroke: $primary;
+	}
+
+	.gui-secondary &.gui-spinner circle {
+		stroke: $secondary;
+	}
+}
+
+

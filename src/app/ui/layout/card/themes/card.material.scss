@@ -1,0 +1,10 @@
+@import '../../../themes/material/material.variables.scss';
+
+#{$material-selector} {
+
+	.gui-card {
+		.gui-card-body {
+			font-family: $font-family;
+		}
+	}
+}

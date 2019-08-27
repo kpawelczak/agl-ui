@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './header/header.componet';
 
-import { FabricModule } from 'util/fabric/ui/fabric.module';
+import { FabricModule } from 'src/app/ui/fabric.module';
 import { HighlightModule } from './prism/highlight.module';
 
 

@@ -2,8 +2,8 @@ import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Renderer
 
 import { HighlightService } from './prism/highlight.service';
 
-import { SpinnerMode } from 'util/fabric/ui/spinners/progress-spinner/spinner-mode';
-import { Placement } from '../../util/fabric/ui/form/modals/dropdown/placement';
+import { SpinnerMode } from 'src/app/ui/spinners/progress-spinner/spinner-mode';
+import { Placement } from './ui/form/modals/dropdown/placement';
 
 import { buttonsCode } from './code-examples/buttons.code';
 import { navTabCode } from './code-examples/navtab.code';

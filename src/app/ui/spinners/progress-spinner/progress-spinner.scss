@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+@import '../mixins-spinner.scss';
+
+.gui-progress-spinner {
+	@include gui-spinner();
+
+	.gui-animations-disabled &.gui-progress-spinner {
+
+		.circle-outer {
+			animation: none;
+		}
+
+		&.gui-progress-spinner {
+			animation: none;
+		}
+	}
+
+	.gui-second-circle-disabled &.gui-progress-spinner {
+
+		.circle-inner {
+			opacity: 0;
+		}
+	}
+
+	.gui-primary &.gui-progress-spinner {
+
+		circle {
+			stroke: $primary;
+		}
+	}
+
+	.gui-secondary &.gui-progress-spinner {
+
+		circle {
+			stroke: $secondary;
+		}
+	}
+}

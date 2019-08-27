@@ -1,0 +1,14 @@
+@import '../../../themes/dark/dark.variables.scss';
+@import '../../../themes/dark/dark.mixins.scss';
+
+#{$dark-selector} {
+
+	.gui-badge {
+		background: $black;
+		color: $basic-text;
+
+		@include primary();
+		@include secondary();
+		@include outline();
+	}
+}
