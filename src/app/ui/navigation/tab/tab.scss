@@ -7,10 +7,9 @@ $padding: $grid $grid*2;
 .gui-tab {
 
 	font: $font;
-	background: $white;
 
 	.gui-tab-content {
-		background: transparent;
+		background: $white;
 		border: {
 			style: solid;
 			width: $border-width;

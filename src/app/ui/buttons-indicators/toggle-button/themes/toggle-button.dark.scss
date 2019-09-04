@@ -19,7 +19,7 @@
 		}
 
 		&.gui-outline {
-			background: lighten($basic-active, 10);
+			background: lighten($basic-active, 5);
 			box-shadow: 0 0 0 1px $border-color;
 			color: $basic-text;
 
