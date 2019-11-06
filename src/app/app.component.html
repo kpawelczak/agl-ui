@@ -34,9 +34,9 @@
 
 		</ul>
 
-<!--		<div class="code-example">-->
-<!--			<pre><code class="language-html">{{buttonCode}}</code></pre>-->
-<!--		</div>-->
+		<!--		<div class="code-example">-->
+		<!--			<pre><code class="language-html">{{buttonCode}}</code></pre>-->
+		<!--		</div>-->
 
 	</section>
 
@@ -430,6 +430,20 @@
 				</gui-tab-item>
 			</gui-tab>
 
+		</div>
+
+	</section>
+
+	<section>
+
+		<h2>Dialog</h2>
+
+		<button gui-button (click)="openDialog()">open</button>
+
+		<h2>Inline dialog</h2>
+
+		<div #inlineDialog>
+			<button gui-button (click)="openInlineDialog()">inline dialog</button>
 		</div>
 
 	</section>

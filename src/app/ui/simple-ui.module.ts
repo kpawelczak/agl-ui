@@ -18,6 +18,8 @@ import { SpinnerModule } from './spinners/spinner/spinner.module';
 import { ToggleButtonModule } from './buttons-indicators/toggle-button/toggle-button.module';
 import { ToggleButtonGroupModule } from './buttons-indicators/toggle-button-group/toggle-button-group.module';
 import { InputModule } from './form/input/input.module';
+import { DialogModule } from './form/modals/dialog/dialog.module';
+import { InlineDialogModule } from './form/modals/inline-dialog/inline-dialog.module';
 
 
 const modules = [
@@ -37,7 +39,9 @@ const modules = [
 	SpinnerModule,
 	ToggleButtonModule,
 	ToggleButtonGroupModule,
-	InputModule
+	InputModule,
+	DialogModule,
+	InlineDialogModule
 ];
 
 @NgModule({

@@ -6,6 +6,8 @@ import { AppHeaderComponent } from './header/header.componet';
 
 import { SimpleUIModule } from 'src/app/ui/simple-ui.module';
 import { HighlightModule } from './prism/highlight.module';
+import { DialogExample } from './examples/dialog/dialog-example.component';
+import { InlineDialogExample } from './examples/dialog/inline-dialog-example.component';
 
 
 @NgModule({
@@ -16,7 +18,13 @@ import { HighlightModule } from './prism/highlight.module';
 	],
 	declarations: [
 		AppComponent,
-		AppHeaderComponent
+		AppHeaderComponent,
+		DialogExample,
+		InlineDialogExample
+	],
+	entryComponents: [
+		DialogExample,
+		InlineDialogExample
 	],
 	providers: [],
 	bootstrap: [AppComponent]
