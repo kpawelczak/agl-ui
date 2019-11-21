@@ -14,11 +14,12 @@ Simple UI elements with examples page.
 1. Make sure you have required apps installed, see section _**Requirements**_.
 2. Clone or download Simple-UI from [here](https://github.com/kpawelczak/simple-ui).
 3. Open /simple-ui directory in comand prompt.
-4. Type in 
+4. Type in <code>npm install</code>
+5. Type in 
 <code>ng serve</code> 
 or 
 <code>ng serve -o</code>
-5. Open the browser and navigate to http://localhost:4200/
+6. Open the browser and navigate to http://localhost:4200/
 
 UI includes: 
 
@@ -34,3 +35,5 @@ UI includes:
 * card
 * select and dropdown
 * themes
+* dialog
+* inline-dialog
